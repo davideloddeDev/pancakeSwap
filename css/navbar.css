@@ -1,0 +1,64 @@
+nav {
+  width: 100%;
+  height: 55px;
+  background-color: #fff;
+  border-bottom: 1px solid rgb(231, 227, 235);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .left {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+nav .left ul {
+  list-style: none;
+  display: flex;
+  margin-left: 24px;
+}
+
+nav .left ul li {
+  padding: 0 16px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  color: #7a6eaa;
+  font-size: 16px;
+}
+
+nav .left ul li:hover {
+  background-color: #eff4f5;
+  border-radius: 16px;
+
+}
+
+nav .right {
+  display: flex;
+  align-items: center;
+  padding-right: 16px;
+}
+
+nav .right .dollars {
+  color: #7a6eaa;
+  font-weight: bold;
+}
+
+nav .right .button {
+  height: 32px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+
+nav .right .button.currency {
+  background-color: #eff4f5;
+  color: #280d5f;
+}
+
+nav .right .button.wallet {
+  background-color: #1fc7d4;
+  color: #fff;
+}
