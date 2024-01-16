@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+}
+
+@font-face {
+  font-family: 'Kanit', sans-serif;
+  src: url("/font/Kanit-Black.ttf"), url("/font/Kanit-BlackItalic.ttf"),
+    url("/font/Kanit-Bold.ttf"), url("/font/Kanit-BoldItalic.ttf"),
+    url("/font/Kanit-ExtraBold.ttf"), url("/font/Kanit-ExtraBoldItalic.ttf"),
+    url("/font/Kanit-ExtraLight.ttf"), url("/font/Kanit-ExtraLightItalic.ttf"),
+    url("/font/Kanit-Italic.ttf"), url("/font/Kanit-Light.ttf"),
+    url("/font/Kanit-LightItalic.ttf"), url("/font/Kanit-Medium.ttf");
+}
+
+.ecosystem {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(250, 250, 250);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+
+
+.header-icon {
+  margin-bottom: 24px;
+}
+
+h1 {
+  color: #280d5f;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.card-title {
+  display: block;
+  font-weight: 600;
+  padding-left: 12px;
+  margin-bottom: 24px;
+  font-size: 32px;
+  line-height: 110%;
+  color: #7645d9;
+}
+
+span {
+  color: #7645d9;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.trade {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1152px;
+  height: 417.19px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 48px;
+  padding: 48px 24px 24px;
+  border-radius: 24px;
+  gap: 32px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.articles-container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+
+.trade-img {
+  width: 340px;
+  height: 340px;
+  margin-left: -72px;
+  float: left;
+}
+
+.earn {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  width: 1152px;
+  height: 417.19px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 48px;
+  padding: 48px 24px 24px;
+  border-radius: 24px;
+  gap: 32px;
+}
+
+.earn-img {
+  width: 340px;
+  height: 340px;
+  margin-right: -72px;
+}
+
+.game-nft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 1152px;
+  height: 417.19px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 48px;
+  padding: 48px 24px 24px;
+  border-radius: 24px;
+  gap: 32px;
+}
+
+.game-nft-img {
+  width: 340px;
+  height: 340px;
+  float: left;
+  margin-left: -72px;
+}
+
+
+article {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+  /* width: 141.59px;
+  height: 286px; */
+  gap: 12px;
+  padding: 12px;
+}
+
+section img {
+  width: 108px;
+  height: 108px;
+}
+
+.caption {
+  font-size: 14px;
+  color: rgb(40, 13, 94);
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.link {
+  color: rgb(123, 111, 171);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+}
+
+h4 {
+  color: #280d5f;
+  font-size: 20px;
+  line-height: 110%;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
