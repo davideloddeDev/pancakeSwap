@@ -32,7 +32,6 @@ nav .left ul li {
 nav .left ul li:hover {
   background-color: #eff4f5;
   border-radius: 16px;
-
 }
 
 nav .right {
@@ -61,4 +60,27 @@ nav .right .button.currency {
 nav .right .button.wallet {
   background-color: #1fc7d4;
   color: #fff;
+}
+
+.sub-menu {
+  background-color: #fff;
+  border: 1px solid #e7e3eb;
+  border-radius: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 280px;
+}
+
+.sub-menu li {
+  font-size: 16px;
+  color: #7a6eaa;
+  padding: 0 16px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub-menu li:hover {
+  background-color: #eff4f5;
 }
