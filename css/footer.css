@@ -1,0 +1,187 @@
+.body-f {
+    font-size: 16px;
+    line-height: 1;
+    font-family: Kanit, sans-serif;
+    font-weight: 600;
+    background-color: #27262c;
+
+    display: flex;
+
+
+    @media screen and (min-width:852px) {
+        justify-content: center;
+    }
+
+}
+
+.container-f {
+    display: flex;
+    flex-direction: column;
+
+    /* @media screen and (min-width: 576px)
+        width: 1200px;
+    */
+
+}
+
+
+.main-f {
+
+    display: flex;
+    order: 2;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+
+
+
+
+    @media screen and (min-width: 1080px) {
+
+        flex-direction: column;
+
+    }
+
+    /*
+    @media screen and (min-width: 968px) {
+
+        flex-direction: row;
+    }
+    */
+
+    @media screen and (min-width: 852px) {
+        flex-direction: row;
+
+    }
+
+    /*
+    @media screen and ( min-width:576px){
+        order:1;
+        flex-direction: column;
+    }
+
+    @media screen and ( min-width:370px){
+            flex-direction: column;
+    }
+    */
+
+
+    /* non la stessa classe di prima
+    @media screen and ( min-width:576px)
+    .embzEQ{
+        margin-bottom: 36px;
+    }
+    */
+
+    /* Non la stessa classe centrale ma è: ".embzEQ"
+
+    margin-bottom: 42px;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    font-size: 100%;
+    vertical-align: baseline;
+    -webkit-font-smoothing: antialiased;
+    */
+
+}
+
+.main-f a {
+    text-decoration: none;
+    color: #f4eeff;
+    transition: 0.3s;
+}
+
+.main-f a:hover {
+    text-decoration: underline;
+}
+
+.list-f {
+    margin-bottom: 40px;
+}
+
+.list-f ul {
+    list-style: inside disc;
+}
+
+.line-f:first-child {
+    color: #a57ff7;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+.line-f {
+    padding: 3px;
+    display: block;
+    margin: 10px;
+}
+
+.logo-f {
+    display: flex;
+    width: 160px;
+    margin-left: 10px;
+}
+
+.socials-f {
+    border-bottom: 1px solid #27262c;
+    display: flex;
+    margin-left: 24px;
+    order: 2;
+    width: 23px;
+    height: 23px;
+}
+
+.socials-f a {
+
+    text-decoration: none;
+
+}
+
+.dark-light-mode-block {
+
+
+    order: 2;
+    
+    
+}
+
+.left-buttons{
+    display: flex;
+    align-items: center;
+
+    @media screen and(min-width:576px) {
+        order: 1;
+    }
+}
+
+.light-mode{
+    align-items: center;
+    border-radius: 24px;
+    box-shadow: blue;/* da modificare*/
+    cursor: pointer;
+    display: inline-flex;
+    height: 32px;
+    position: relative;
+    transition: background-color 200ms ease 0s;
+    width: 56px;
+}
+/*
+.light-mode  .md{
+    cursor: pointer;
+    opacity: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+}
+*/
+.light-mode input [type="checkbox" i] {
+
+    background-color: initial;
+    cursor: default;
+    appearance: auto;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
