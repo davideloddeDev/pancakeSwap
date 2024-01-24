@@ -1,0 +1,37 @@
+.banner {
+  background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.warning-banner {
+  font-family: Kanit, sans-serif;
+  font-size: 14px;
+  background: rgba(39, 38, 44, 0.4);
+  border-radius: 16px;
+  padding: 8px;
+  width: 60%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.avviso-phishing {
+  font-weight: 600;
+  color: #ffb237;
+  text-transform: uppercase;
+}
+
+.check-url {
+  font-weight: 400;
+  color: rgb(189, 194, 196)
+}
+
+.url-website {  
+  font-weight: 600;
+  color: rgb(255, 255, 255)
+}
