@@ -1,0 +1,11 @@
+:root {
+    --primary-color: #6136a8;
+    --secondary-color: #1fc7d4;
+    --border-radius: 16px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
