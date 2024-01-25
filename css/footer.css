@@ -30,58 +30,11 @@
     display: flex;
     order: 2;
     flex-direction: column;
-    /*justify-content: space-between;*/
 
-
-
-
-    @media screen and (min-width: 1080px) {
-
-        flex-direction: column;
-
-    }
-
-    /*
-    @media screen and (min-width: 968px) {
-
-        flex-direction: row;
-    }
-    */
 
     @media screen and (min-width: 852px) {
         flex-direction: row;
-
     }
-
-    /*
-    @media screen and ( min-width:576px){
-        order:1;
-        flex-direction: column;
-    }
-
-    @media screen and ( min-width:370px){
-            flex-direction: column;
-    }
-    */
-
-
-    /* non la stessa classe di prima
-    @media screen and ( min-width:576px)
-    .embzEQ{
-        margin-bottom: 36px;
-    }
-    */
-
-    /* Non la stessa classe centrale ma è: ".embzEQ"
-
-    margin-bottom: 42px;
-    margin: 0px;
-    padding: 0px;
-    border: 0px;
-    font-size: 100%;
-    vertical-align: baseline;
-    -webkit-font-smoothing: antialiased;
-    */
 
 }
 
