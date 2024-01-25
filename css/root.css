@@ -1,11 +1,34 @@
 :root {
-    --primary-color: #6136a8;
-    --secondary-color: #1fc7d4;
-    --border-radius: 16px;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  --primary-color: #6136a8;
+  --secondary-color: #1fc7d4;
+  --border-radius: 16px;
+}
+
+@font-face {
+  font-family: 'Kanit';
+  src: url('../fonts/Kanit/Kanit-Black.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-BlackItalic.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-Bold.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-BoldItalic.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-ExtraBold.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-ExtraBoldItalic.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-ExtraLight.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-ExtraLightItalic.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-Italic.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-Light.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-LightItalic.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-Medium.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-MediumItalic.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-Regular.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-SemiBold.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-SemiBoldItalic.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-Thin.ttf') format('ttf'),
+    url('../fonts/Kanit/Kanit-ThinItalic.ttf') format('ttf');
+  /* Aggiungi altre font-face regole se il font è disponibile in diversi formati */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kanit', sans-serif;
+}
