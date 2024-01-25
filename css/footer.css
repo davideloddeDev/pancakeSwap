@@ -4,7 +4,7 @@
     font-family: Kanit, sans-serif;
     font-weight: 600;
     background-color: #27262c;
-
+    padding-top: 42px;
     display: flex;
 
 }
@@ -153,4 +153,74 @@
 
 .social-back {
     background-color: #b8add2;
+}
+
+footer {
+    height: 120px;
+    background-color: #27262c;
+}
+
+.footer-sx {
+    width: 50%;
+    padding-top: 30px;
+    padding-left: 45px;
+}
+
+.switch-label {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch-label input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 60px;
+    height: 34px;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    top: 4px;
+    margin-left: 4px;
+    margin-right: 4px;
+    content: "";
+    height: 26px;
+    width: 26px;
+    background-color: #27262c;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.sun {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 26px;
+    height: 26px;
+    fill: #ffdb58; /* Colore giallo per il sole */
+}
+
+.moon {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 26px;
+    height: 26px;
+    fill: #a8a8a8; /* Colore grigio per la luna */
 }
