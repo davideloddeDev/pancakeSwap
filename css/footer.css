@@ -74,8 +74,12 @@
     display: block;
     margin: 10px;
 }
+.alogo-f{
+    margin-top: 8px;
+}
 
 .logo-f {
+    
     display: flex;
     width: 160px;
     margin-left: 10px;
