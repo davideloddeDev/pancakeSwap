@@ -1,0 +1,15 @@
+.slider-container-hero {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slider-hero {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide-hero {
+    flex: 0 0 100%;
+    height: 200px;
+}
