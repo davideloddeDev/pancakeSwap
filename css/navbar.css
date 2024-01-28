@@ -41,7 +41,7 @@ nav .left .menu a {
   height: 48px;
   display: flex;
   align-items: center;
-  color: var(--colors-text-subtle), #7a6eaa;
+  color: var(--colors-text-subtle, #7a6eaa);
   font-size: 16px;
 }
 
@@ -57,7 +57,7 @@ nav .right {
 }
 
 nav .right .dollars {
-  color: var(--colors-text-subtle), #7a6eaa;
+  color: var(--colors-text-subtle, #7a6eaa);
   font-weight: bold;
 }
 
@@ -70,11 +70,11 @@ nav .right .button {
 
 nav .right .button.currency {
   background-color: #eff4f5;
-  color: var(--primary-color-news), #280d5f;
+  color: var(--primary-color-news, #280d5f);
 }
 
 nav .right .button.wallet {
-  background-color: var(--secondary-color), #1fc7d4;
+  background-color: var(--secondary-color, #1fc7d4);
   color: #fff;
 }
 
@@ -94,7 +94,7 @@ nav .right .button.wallet {
 
 .sub-menu li {
   font-size: 16px;
-  color: var(--colors-text-subtle), #7a6eaa;
+  color: var(--colors-text-subtle, #7a6eaa);
   padding: 0 16px;
   height: 48px;
   display: flex;
