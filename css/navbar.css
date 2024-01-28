@@ -5,8 +5,8 @@
 
 nav {
   width: 100%;
-  /* height: 55px; */
-  /* padding: 3px 0; */
+  height: 56px;
+  /* padding-right: 16px; */
   background-color: #fff;
   border-bottom: 1px solid rgb(231, 227, 235);
   display: flex;
@@ -43,6 +43,7 @@ nav .left .menu a {
   align-items: center;
   color: var(--colors-text-subtle, #7a6eaa);
   font-size: 16px;
+  padding-top: 16px;
 }
 
 nav .left .menu a:hover {
@@ -125,3 +126,4 @@ nav .left .menu>li:hover .sub-menu,
   border-top: 1px solid rgb(231, 227, 235);
   border-bottom: 1px solid rgb(231, 227, 235);
 }
+
