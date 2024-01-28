@@ -6,6 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /* da mettere su root.css ? */
+  -webkit-font-smoothing: antialiased;
 }
 
 .banner-content {
@@ -72,5 +74,10 @@
     height: auto;
     background: none;
     padding: 0;
+    display: block;
+  }
+
+  .close-button {
+    width: 28px;
   }
 }
