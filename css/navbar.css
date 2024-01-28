@@ -55,11 +55,15 @@ nav .right {
   display: flex;
   align-items: center;
   padding-right: 16px;
+  gap: 16px;
+  /* per renderli equidistanti gli uni dagli altri,
+  simmetricamente, rispetto al sito*/
 }
 
 nav .right .dollars {
   color: var(--colors-text-subtle, #7a6eaa);
   font-weight: bold;
+  cursor: pointer;
 }
 
 nav .right .button {
@@ -72,11 +76,32 @@ nav .right .button {
 nav .right .button.currency {
   background-color: #eff4f5;
   color: var(--primary-color-news, #280d5f);
+  /* margin-left: 8px;
+  margin-right: 4px; */
+  padding-right: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
+}
+
+nav .right .button-icon, 
+nav .right .dollars,
+nav .right .button.currency {
+  cursor: pointer;
+}
+
+nav .right .button.currency span {
+  font-weight: 600;
+  padding-right: 4px;
+  padding-left: 8px;
 }
 
 nav .right .button.wallet {
   background-color: var(--secondary-color, #1fc7d4);
   color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
 }
 
 .sub-menu {
