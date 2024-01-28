@@ -55,3 +55,22 @@
   justify-content: center;
   align-items: center;
 }
+
+@media screen and (max-width: 768px) {
+  .banner {
+    background: linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)), linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    height: auto;
+    padding: 12px;
+  }
+
+  .bunny-img {
+    display: none;
+  }
+
+  .warning-banner {
+    width: 100%;
+    height: auto;
+    background: none;
+    padding: 0;
+  }
+}
