@@ -21,18 +21,13 @@
 .container-f {
     display: flex;
     flex-direction: column;
-
-    /* @media screen and (min-width: 576px)
-        width: 1200px;
-    */
-
+    gap: 25px;
 }
 
 
 .main-f {
 
     display: flex;
-    order: 2;
     flex-direction: column;
 
 }
@@ -52,6 +47,7 @@
     .main-f {
         flex-direction: row;
     }
+   
 }
 
 .list-f {
@@ -100,56 +96,12 @@
 
 }
 
-.dark-light-mode-block {
-
-
-    order: 2;
-
-
-}
 
 .left-buttons {
     display: flex;
     align-items: center;
-
-    @media screen and(min-width:576px) {
-        order: 1;
-    }
 }
 
-.light-mode {
-    align-items: center;
-    border-radius: 24px;
-    box-shadow: blue;
-    /* da modificare*/
-    cursor: pointer;
-    display: inline-flex;
-    height: 32px;
-    position: relative;
-    transition: background-color 200ms ease 0s;
-    width: 56px;
-}
-
-/*
-.light-mode  .md{
-    cursor: pointer;
-    opacity: 0;
-    height: 100%;
-    position: absolute;
-    width: 100%;
-    z-index: 3;
-}
-*/
-.light-mode input [type="checkbox" i] {
-
-    background-color: initial;
-    cursor: default;
-    appearance: auto;
-    box-sizing: border-box;
-    margin: 3px 3px 3px 4px;
-    padding: initial;
-    border: initial;
-}
 
 .social-back {
     background-color: #b8add2;
@@ -160,10 +112,34 @@ footer {
     background-color: #27262c;
 }
 
+.line-2{
+    border-top : 1px solid lightgray;
+    order: 2;
+    opacity: 20%;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+.sub-footer{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order:3;
+    width: 97%;
+    margin-top: 20px;
+    gap: 24px;
+    margin-left: 42px;
+}
 .footer-sx {
-    width: 50%;
-    padding-top: 30px;
-    padding-left: 45px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-dx {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    color: white;
 }
 
 .switch-label {
@@ -185,26 +161,30 @@ footer {
     transform: translateX(-50%);
     width: 60px;
     height: 34px;
-    background-color: #ccc;
+    background-color: #666171;
     transition: 0.4s;
     border-radius: 34px;
+    
 }
 
 .slider:before {
     position: absolute;
-    top: 4px;
-    margin-left: 4px;
-    margin-right: 4px;
+    top: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
     content: "";
-    height: 26px;
-    width: 26px;
+    height: 30px;
+    width: 30px;
     background-color: #27262c;
     transition: 0.4s;
+    
+    border: 3px solid #a57ff7;
     border-radius: 50%;
 }
 
 input:checked + .slider:before {
     transform: translateX(26px);
+    
 }
 
 .sun {
@@ -224,3 +204,22 @@ input:checked + .slider:before {
     height: 26px;
     fill: #a8a8a8; /* Colore grigio per la luna */
 }
+
+.language-bar{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #b8add2;
+    fill: #b8add2;
+
+    margin-bottom: 10px;
+    margin-left: 24px;
+    gap:8px;
+}
+
+.lan{
+    width: 26px;
+    height: 26px;
+}
+
