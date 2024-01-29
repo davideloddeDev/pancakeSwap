@@ -84,6 +84,7 @@ span {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
+  gap: 16px;
 }
 
 
@@ -175,3 +176,36 @@ h4 {
   font-weight: 600;
   margin-bottom: 8px;
 }
+
+.card-svg {
+  fill: rgb(123, 111, 171);;
+}
+
+.img-hover {
+  width: 108px;
+  height: 108px;
+  display: none;
+}
+
+article:hover {
+  cursor: pointer;
+}
+
+article:hover .link{
+  color: rgb(32, 200, 212);
+}
+article:hover .card-svg{
+  fill: rgb(32, 200, 212);
+}
+
+article:hover img {
+  display: none;
+}
+
+article:hover .img-hover {
+  display: flex;
+  justify-content: center;
+}
+
+
+
