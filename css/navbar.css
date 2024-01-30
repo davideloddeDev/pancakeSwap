@@ -29,6 +29,7 @@ nav .left .menu {
   list-style: none;
   display: flex;
   margin-left: 24px;
+  margin-bottom: 0;
 }
 
 nav .left .menu li {
@@ -43,7 +44,6 @@ nav .left .menu a {
   align-items: center;
   color: var(--colors-text-subtle, #7a6eaa);
   font-size: 16px;
-  padding-top: 16px;
 }
 
 nav .left .menu a:hover {
