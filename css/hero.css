@@ -1,5 +1,6 @@
 .slider-container-hero {
     width: 80%;
+    height: 200px;
     margin: auto;
     overflow: hidden;
 }
@@ -12,4 +13,32 @@
 .slide-hero {
     flex: 0 0 100%;
     height: 200px;
+}
+
+.position-bar {
+    width: 80%;
+    height: 50px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.container-position-slider {
+    width: 110px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #aaa;
+    border-radius: 10px;
+}
+
+.position {
+    width: 22px;
+    height: 8px;
+    margin: 5px;
 }
