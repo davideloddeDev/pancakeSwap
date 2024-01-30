@@ -1,16 +1,17 @@
 const sliderHero = document.querySelector('.slider-hero');
-let counter = 1;
+  const slides = document.querySelectorAll('.slide-hero');
+  let counter = 0;
 
-setInterval(() => {
-    slider.style.transition = 'transform 0.5s ease-in-out';
-    slider.style.transform = 'translateX(' + (-counter * 100) + '%)';
+  setInterval(() => {
+    sliderHero.style.transition = 'transform 0.5s ease-in-out';
+    sliderHero.style.transform = 'translateX(' + (-counter * 100) + '%)';
     counter++;
 
-    if (counter === 3) {
-        setTimeout(() => {
-            slider.style.transition = 'none';
-            slider.style.transform = 'translateX(0)';
-            counter = 1;
-        }, 500);
+    if (counter === slides.length) {
+      setTimeout(() => {
+        sliderHero.style.transition = 'none';
+        sliderHero.style.transform = 'translateX(0)';
+        counter = 0;
+      }, 500);
     }
-}, 2000);
+  }, 3000);
