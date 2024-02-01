@@ -63,15 +63,12 @@
 .section-news>.bottom-section>.card {
     border: none;
 
-
-
     width: 280px;
     height: 387px;
 
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
-
 }
 .card:hover{
     cursor: pointer;
