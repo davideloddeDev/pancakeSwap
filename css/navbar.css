@@ -88,6 +88,16 @@ nav .right .button.currency {
   cursor: pointer;
 }
 
+nav .right .button-icon.bunny-icon {
+  transition: transform 0.3s ease 0s;
+}
+/* transition applicata sull'item di interesse */
+
+nav .right .button-icon.bunny-icon:hover {
+  transform: scale(1.2);
+}
+/* transform sullo stato dell'item di interesse */
+
 nav .right .button.currency span {
   font-weight: 600;
   padding-right: 4px;
