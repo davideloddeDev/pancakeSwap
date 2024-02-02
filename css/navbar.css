@@ -28,14 +28,16 @@ nav .left {
   padding-left: 16px;
 }
 
-nav .left .menu {
+nav .left .menu,
+nav .right .menu {
   list-style: none;
   display: flex;
   margin-left: 24px;
   margin-bottom: 0;
 }
 
-nav .left .menu li {
+nav .left .menu li,
+nav .right .menu li {
   position: relative;
 }
 
@@ -56,9 +58,12 @@ nav .left .menu a:hover {
 }
 
 nav .right {
+  padding-right: 16px;
+}
+
+nav .right .menu {
   display: flex;
   align-items: center;
-  padding-right: 16px;
   gap: 16px;
   /* per renderli equidistanti gli uni dagli altri,
   simmetricamente, rispetto al sito */
