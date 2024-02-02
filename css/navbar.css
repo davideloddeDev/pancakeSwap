@@ -41,7 +41,8 @@ nav .right .menu li {
   position: relative;
 }
 
-nav .left .menu a {
+nav .left .menu a,
+nav .right .menu .sub-menu li a {
   padding: 0 16px;
   margin: 3px 0;
   height: 48px;
@@ -156,12 +157,14 @@ nav .right .button-wallet {
   background-color: #eff4f5;
 }
 
-nav .left .menu .sub-menu li a {
+nav .left .menu .sub-menu li a,
+nav .right .menu .sub-menu li a {
   padding: 0 16px;
   width: 100%;
 }
 
 nav .left .menu>li:hover .sub-menu,
+nav .right .menu>li:hover .sub-menu,
 .sub-menu:hover {
   display: block;
 }
