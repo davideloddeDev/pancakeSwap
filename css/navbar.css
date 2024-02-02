@@ -170,6 +170,11 @@ nav .right .menu .sub-menu li a {
   width: 100%;
 }
 
+nav .right .menu .sub-menu li a {
+  justify-content: flex-start;
+  gap: 12px;
+}
+
 nav .left .menu>li:hover .sub-menu,
 nav .right .menu>li:hover .sub-menu,
 .sub-menu:hover {
