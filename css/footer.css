@@ -160,26 +160,26 @@ footer {
     top: 0;
     left: 50%; 
     transform: translateX(-50%);
-    width: 60px;
-    height: 34px;
+    width: 56px;
+    height: 32px;
     background-color: #666171;
     transition: 0.4s;
     border-radius: 34px;
+    gap: 10px;
     
 }
 
 .slider:before {
     position: absolute;
-    top: 2px;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: 0.5px;
+   
     content: "";
     height: 30px;
     width: 30px;
     background-color: #27262c;
     transition: 0.4s;
     
-    border: 4px solid #a57ff7;
+    border: 3px solid #a57ff7;
     border-radius: 50%;
 }
 
@@ -192,22 +192,30 @@ input:checked + .slider:before {
     position: absolute;
     top: 4px;
     left: 4px;
-    width: 26px;
-    height: 26px;
-    
+    width: 22px;
+    height: 22px;
+    fill: #ffdb58;
    
-}
-.sun:hover {
-    fill: #ffdb58; /* Colore giallo per il sole */
 }
 
 .moon {
     position: absolute;
+    
     top: 4px;
-    right: 1px;
-    width: 26px;
-    height: 26px;
-    fill: #a8a8a8; /* Colore grigio per la luna */
+    right: 3px;
+    width: 22px;
+    height: 22px;
+    fill: black;
+     /* Colore grigio per la luna */
+}
+
+
+#dayNightSwitch:checked + .slider .sun {
+    fill: black; /* Colore nero per il sole inattivo */
+}
+
+#dayNightSwitch:checked + .slider .moon {
+    fill: #a57ff7; /* Colore viola per la luna attiva */
 }
 
 .dropdown {
