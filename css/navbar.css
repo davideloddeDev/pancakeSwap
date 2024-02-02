@@ -41,6 +41,17 @@ nav .right .menu li {
   position: relative;
 }
 
+nav .right .menu li ul>li:first-child {
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-left: 16px;
+  height: 24px;
+}
+
+nav .right .menu li ul>li:first-child:hover {
+  background-color: #fff;
+}
+
 nav .left .menu a,
 nav .right .menu a {
   margin: 3px 0;
