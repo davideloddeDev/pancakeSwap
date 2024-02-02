@@ -19,6 +19,10 @@ nav {
   -webkit-font-smoothing: antialiased;
 }
 
+nav a:hover {
+  text-decoration: none;
+}
+
 nav .left {
   display: flex;
   align-items: center;
@@ -63,7 +67,7 @@ nav .right {
 nav .right .dollars {
   color: var(--colors-text-subtle, #7a6eaa);
   font-weight: bold;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 nav .right .button {
@@ -73,7 +77,7 @@ nav .right .button {
   align-items: center;
 }
 
-nav .right .button.currency {
+nav .right .button-currency {
   background-color: #eff4f5;
   color: var(--primary-color-news, #280d5f);
   /* margin-left: 8px;
@@ -83,31 +87,30 @@ nav .right .button.currency {
 }
 
 nav .right .button-icon, 
-nav .right .dollars,
-nav .right .button.currency {
+nav .right .button-currency,
+nav .right .button-wallet {
   cursor: pointer;
 }
 
-nav .right .button-icon.bunny-icon {
+nav .right .bunny-icon {
   transition: transform 0.3s ease 0s;
 }
 /* transition applicata sull'item di interesse */
 
-nav .right .button-icon.bunny-icon:hover {
+nav .right .bunny-icon:hover {
   transform: scale(1.2);
 }
 /* transform sullo stato dell'item di interesse */
 
-nav .right .button.currency span {
+nav .right .button-currency span {
   font-weight: 600;
   padding-right: 4px;
   padding-left: 8px;
 }
 
-nav .right .button.wallet {
+nav .right .button-wallet {
   background-color: var(--secondary-color, #1fc7d4);
   color: #fff;
-  cursor: pointer;
   font-weight: 600;
   letter-spacing: 0.03em;
   padding: 0 16px;

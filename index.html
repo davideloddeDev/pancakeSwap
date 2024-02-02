@@ -35,10 +35,14 @@
   <!-- Navbar -->
   <nav>
     <div class="left">
-      <img src="images/logo.svg" width="160" height="25" alt="logo">
+      <a href="#"><img src="images/logo.svg" width="160" height="25" alt="logo"></a>
       <ul class="menu">
         <li>
-          <a>Scambia</a>
+          <!-- aggiunti href ai tag <a>, lato sinistro della navbar
+            - aggiungerli ai sub-link
+            - togliere il text-decoration
+            - aggiunerli al lato destro della navbar -->
+          <a href="#">Scambia</a>
           <ul class="sub-menu">
             <li>Scambia</li>
             <li>Liquidità</li>
@@ -56,7 +60,7 @@
           </ul>
         </li>
         <li>
-          <a>Guadagna</a>
+          <a href="#">Guadagna</a>
           <ul class="sub-menu">
             <li>Farm</li>
             <li>CAKE Staking</li>
@@ -67,7 +71,7 @@
           </ul>
         </li>
         <li>
-          <a>Gioco</a>
+          <a href="#">Gioco</a>
           <ul class="sub-menu">
             <li>Gaming Marketplace
               <img src="images/arrow_down.svg" width="20" height="20" alt="arrow down">
@@ -79,7 +83,7 @@
         </li>
         </li>
         <li>
-          <a>NFT</a>
+          <a href="#">NFT</a>
           <ul class="sub-menu">
             <li>Panoramica</li>
             <li>Raccolte</li>
@@ -87,7 +91,7 @@
           </ul>
         </li>
         <li>
-          <a>
+          <a href="#">
             <img src="images/three_dots.svg" width="20" height="20" alt="three_dots">
           </a>
           <ul class="sub-menu">
@@ -107,17 +111,19 @@
       </ul>
     </div>
     <div class="right">
-      <img class="button-icon bunny-icon" width="24" height="24" src="images/circle_bunny.svg" alt="bunny">
-      <span class="dollars">$2.542</span>
+      <a href="#">
+        <img class="bunny-icon" width="24" height="24" src="images/circle_bunny.svg" alt="bunny">
+        <span class="dollars">$2.542</span>
+      </a>
       <img class="button-icon" src="images/globe.svg" alt="globe" width="24" height="24" class="icon">
       <img class="button-icon" src="images/settings.svg" alt="settings" width="24" height="24" class="icon">
       <img class="button-icon" src="images/bell.svg" alt="bell" width="24" height="24" class="icon">
-      <div class="button currency">
+      <div class="button button-currency">
         <img src="images/button_currency.png" width="32" height="32" alt="crypto">
         <span>BNB Chain</span>
         <img src="images/right_arrow_down.svg" width="24" height="24" alt="right arrow down">
       </div>
-      <div class="button wallet">
+      <div class="button button-wallet">
         <span>Connetti wallet</span>
       </div>
     </div>
