@@ -96,7 +96,7 @@ nav .right .button {
   align-items: center;
 }
 
-nav .right .button:hover {
+nav .right .button-opacity:hover {
   opacity: 0.65;
 }
 
