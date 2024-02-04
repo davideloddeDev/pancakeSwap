@@ -100,7 +100,7 @@ nav .right .button-opacity:hover {
 
 nav .right .button-currency {
   background-color: var(--tertiary-color, #eff4f5);
-  color: var(--primary-color-news, #280d5f);
+  color: var(--colors-text, #280d5f);
   padding-right: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
 }

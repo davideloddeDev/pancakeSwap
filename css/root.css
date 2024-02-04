@@ -1,16 +1,19 @@
 :root {
-  --primary-color: #6136a8; /* non trovato */
-  --secondary-color: #1fc7d4; /* uguale */
-  --tertiary-color: #eff4f5; /* #353547 */
+  --primary-color: #6136a8;
+  --secondary-color: #1fc7d4;
   --border-radius: 16px;
-  --primary-color-news: #280d5f; /* uguale */
-  --secondary-color-news: #7645d9; /* #a881fc */
-  --colors-text-subtle: #7a6eaa; /* #b8add2 */
-  --colors-background-alt: #fff; /* #27262c */
-  --colors-inverted-contrast: #fff; /* #191326 */
-  --colors-card-border: #e7e3eb; /* #383241 */
+  --primary-color-news: #280d5f;
+  --secondary-color-news: #7645d9;
+  --colors-text-subtle: #7a6eaa;
+  /* aggiunto da Martina */
+  --tertiary-color: #eff4f5;
+  --colors-background-alt: #fff;
+  --colors-inverted-contrast: #fff;
+  --colors-card-border: #e7e3eb;
+  --colors-text: #280d5f;
 }
 
+/* aggiunto da Martina */
 [data-theme="dark"]:root {
   --tertiary-color: #353547;
   --secondary-color-news: #a881fc;
@@ -18,6 +21,7 @@
   --colors-background-alt: #27262c;
   --colors-inverted-contrast: #191326;
   --colors-card-border: #383241;
+  --colors-text: #f4eeff;
 }
 
 @font-face {
