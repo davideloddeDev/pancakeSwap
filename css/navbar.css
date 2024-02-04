@@ -130,6 +130,10 @@ nav .right .button-wallet {
   line-height: 100%;
 }
 
+nav .right .button-wallet p {
+  margin-bottom: 0;
+}
+
 .sub-menu {
   background-color: #fff;
   border: 1px solid #e7e3eb;
@@ -281,6 +285,16 @@ nav .right .sub-menu-currencies hr {
   }
 
   nav .left .logo-desktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 851px) {
+  nav .left .menu {
+    display: none;
+  }
+
+  nav .right .button-wallet span {
     display: none;
   }
 }
