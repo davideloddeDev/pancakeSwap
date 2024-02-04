@@ -198,6 +198,51 @@ nav .right .menu>li:hover .sub-menu,
   display: block;
 }
 
+nav .right .languages {
+  position: relative;
+}
+
+nav .right .languages:hover .languages-submenu,
+nav .right .languages .languages-submenu:hover {
+  display: block;
+}
+
+nav .right .languages .languages-submenu {
+  display: none;
+  position: absolute;
+  width: max-content;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  padding: 16px;
+  max-height: 400px;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+  box-shadow: 0px 2px 12px -8px rgba(25,19,38,.1),0px 1px 1px rgba(25,19,38,.05);
+  border-radius: 4px;
+}
+
+nav .right .languages .languages-submenu a {
+  padding: 0 8px;
+  margin: 0;
+  font-weight: 600;
+  color: var(--primary-color-news, #280d5f);
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  min-height: 32px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .right .languages .languages-submenu a:hover {
+  opacity: 0.65;
+}
+
 .border-top-bottom {
   border-top: 1px solid rgb(231, 227, 235);
   border-bottom: 1px solid rgb(231, 227, 235);
