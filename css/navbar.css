@@ -41,17 +41,6 @@ nav .right .menu li {
   position: relative;
 }
 
-nav .right .menu li ul>li:first-child {
-  padding-top: 12px;
-  padding-right: 16px;
-  padding-left: 16px;
-  height: 24px;
-}
-
-nav .right .menu li ul>li:first-child:hover {
-  background-color: #fff;
-}
-
 nav .left .menu a,
 nav .right .menu a {
   margin: 3px 0;
@@ -202,17 +191,16 @@ nav .right .languages {
   position: relative;
 }
 
-nav .right .languages:hover .languages-submenu,
-nav .right .languages .languages-submenu:hover {
-  display: block;
+nav .right .languages:hover .languages-sub-menu,
+nav .right .languages .languages-sub-menu:hover {
+  display: flex;
 }
 
-nav .right .languages .languages-submenu {
+nav .right .languages .languages-sub-menu {
   display: none;
   position: absolute;
   left: -86.5px;
   width: max-content;
-  display: flex;
   align-items: stretch;
   flex-direction: column;
   padding: 16px;
@@ -224,7 +212,7 @@ nav .right .languages .languages-submenu {
   border-radius: 4px;
 }
 
-nav .right .languages .languages-submenu a {
+nav .right .languages .languages-sub-menu a {
   padding: 0 8px;
   margin: 0;
   font-weight: 600;
@@ -240,9 +228,33 @@ nav .right .languages .languages-submenu a {
   justify-content: center;
 }
 
-nav .right .languages .languages-submenu a:hover {
+nav .right .languages .languages-sub-menu a:hover {
   opacity: 0.65;
 }
+
+nav .right .sub-menu-currencies li a {
+  line-height: 1.5;
+  color: var(--primary-color-news, #280d5f);
+}
+
+nav .right .sub-menu-currencies li.selected-currency a {
+  color: var(--secondary-color-news, #7645d9);
+  font-weight: 600;
+}
+
+nav .right .menu li ul.sub-menu-currencies>li:first-child {
+  padding: 8px 16px;
+  height: auto;
+}
+
+nav .right .menu li ul.sub-menu-currencies>li:first-child:hover {
+  background-color: #fff;
+}
+
+nav .right .sub-menu-currencies hr {
+  margin: 4px 0;
+}
+
 
 .border-top-bottom {
   border-top: 1px solid rgb(231, 227, 235);
