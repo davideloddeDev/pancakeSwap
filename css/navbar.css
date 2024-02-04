@@ -153,6 +153,11 @@ nav .right .button-wallet {
   z-index: 1001;
 }
 
+.sub-menu-centered {
+  /* (width sub-menu - width parent li) / 2 */
+  left: -63.5px;
+}
+
 .sub-menu li {
   font-size: 16px;
   color: var(--colors-text-subtle, #7a6eaa);
