@@ -61,28 +61,13 @@ nav .left .menu a:hover {
   border-radius: 16px;
 }
 
-nav .left .logo-desktop-dark {
+nav .dark,
+html[data-theme="dark"] nav .light {
   display: none;
 }
 
-html[data-theme="dark"] nav .left .logo-desktop-dark {
+html[data-theme="dark"] nav .dark {
   display: block;
-}
-
-html[data-theme="dark"] nav .left .logo-desktop-light {
-  display: none;
-}
-
-nav .left .three-dots-dark {
-  display: none;
-}
-
-html[data-theme="dark"] nav .left .three-dots-dark {
-  display: block;
-}
-
-html[data-theme="dark"] nav .left .three-dots-light {
-  display: none;
 }
 
 nav .right {
@@ -288,7 +273,7 @@ nav .right .sub-menu-currencies hr {
 
 
 .border-top-bottom {
-  border-top: 1px solid rgb(231, 227, 235);
+  border-top: 1px solid #e7e3eb;
   border-bottom: 1px solid rgb(231, 227, 235);
 }
 
@@ -309,8 +294,8 @@ nav .right .sub-menu-currencies hr {
     display: none;
   }
 
-  nav .left .logo-desktop-light, 
-  html[data-theme="dark"] nav .left .logo-desktop-dark {
+  nav .left .logo-desktop,
+  nav .left .logo-desktop.dark {
     display: none;
   }
 }
