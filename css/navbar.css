@@ -73,6 +73,18 @@ html[data-theme="dark"] nav .left .logo-desktop-light {
   display: none;
 }
 
+nav .left .three-dots-dark {
+  display: none;
+}
+
+html[data-theme="dark"] nav .left .three-dots-dark {
+  display: block;
+}
+
+html[data-theme="dark"] nav .left .three-dots-light {
+  display: none;
+}
+
 nav .right {
   padding-right: 16px;
 }
