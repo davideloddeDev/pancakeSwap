@@ -113,10 +113,11 @@ nav .right .bunny-icon:hover img {
   transform: scale(1.2);
 }
 
-nav .right .button-currency span {
+nav .right .button-currency p {
   font-weight: 600;
   padding-right: 4px;
   padding-left: 8px;
+  margin-bottom: 0;
 }
 
 nav .right .button-wallet {
@@ -126,6 +127,7 @@ nav .right .button-wallet {
   letter-spacing: 0.03em;
   padding: 0 16px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  line-height: 100%;
 }
 
 .sub-menu {
@@ -259,4 +261,26 @@ nav .right .sub-menu-currencies hr {
 .border-top-bottom {
   border-top: 1px solid rgb(231, 227, 235);
   border-bottom: 1px solid rgb(231, 227, 235);
+}
+
+@media screen and (max-width: 1079px) {
+  nav .right .button-currency p span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  nav .left .logo-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  nav .right .menu .bunny-icon {
+    display: none;
+  }
+
+  nav .left .logo-desktop {
+    display: none;
+  }
 }
