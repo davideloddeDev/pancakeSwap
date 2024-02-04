@@ -232,7 +232,7 @@ nav .right .languages .languages-sub-menu a {
   padding: 0 8px;
   margin: 0;
   font-weight: 600;
-  color: var(--primary-color-news, #280d5f);
+  color: var(--colors-text, #280d5f);
   border-radius: 8px;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -250,7 +250,7 @@ nav .right .languages .languages-sub-menu a:hover {
 
 nav .right .sub-menu-currencies li a {
   line-height: 1.5;
-  color: var(--primary-color-news, #280d5f);
+  color: var(--colors-text, #280d5f);
 }
 
 nav .right .sub-menu-currencies li.selected-currency a {
@@ -273,8 +273,8 @@ nav .right .sub-menu-currencies hr {
 
 
 .border-top-bottom {
-  border-top: 1px solid #e7e3eb;
-  border-bottom: 1px solid rgb(231, 227, 235);
+  border-top: 1px solid var(--colors-card-border, #e7e3eb);
+  border-bottom: 1px solid var(--colors-card-border, #e7e3eb);
 }
 
 @media screen and (max-width: 1079px) {
