@@ -8,6 +8,7 @@
   --colors-text-subtle: #7a6eaa; /* #b8add2 */
   --colors-background-alt: #fff; /* #27262c */
   --colors-inverted-contrast: #fff; /* #191326 */
+  --colors-card-border: #e7e3eb; /* #383241 */
 }
 
 [data-theme="dark"]:root {
@@ -16,6 +17,7 @@
   --colors-text-subtle: #b8add2;
   --colors-background-alt: #27262c;
   --colors-inverted-contrast: #191326;
+  --colors-card-border: #383241;
 }
 
 @font-face {

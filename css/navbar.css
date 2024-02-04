@@ -148,8 +148,8 @@ nav .right .button-wallet p {
 }
 
 .sub-menu {
-  background-color: #fff;
-  border: 1px solid #e7e3eb;
+  background-color: var(--colors-background-alt, #fff);
+  border: 1px solid var(--colors-card-border, #e7e3eb);
   border-radius: 16px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -186,7 +186,7 @@ nav .right .button-wallet p {
 }
 
 .sub-menu li:hover {
-  background-color: #eff4f5;
+  background-color: var(--tertiary-color, #eff4f5);
 }
 
 nav .left .menu .sub-menu li a,
@@ -226,7 +226,7 @@ nav .right .languages .languages-sub-menu {
   max-height: 400px;
   overflow: hidden;
   overflow-y: auto;
-  background-color: #fff;
+  background-color: var(--colors-background-alt, #fff);
   box-shadow: 0px 2px 12px -8px rgba(25,19,38,.1),0px 1px 1px rgba(25,19,38,.05);
   border-radius: 4px;
 }
@@ -267,7 +267,7 @@ nav .right .menu li ul.sub-menu-currencies>li:first-child {
 }
 
 nav .right .menu li ul.sub-menu-currencies>li:first-child:hover {
-  background-color: #fff;
+  background-color: inherit;
 }
 
 nav .right .sub-menu-currencies hr {
