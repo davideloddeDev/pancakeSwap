@@ -16,6 +16,7 @@ nav {
   font-weight: 400;
   /* da mettere su root.css */
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 nav a:hover {
@@ -128,6 +129,7 @@ nav .right .button-wallet {
   padding: 0 16px;
   box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
   line-height: 100%;
+  text-align: center;
 }
 
 nav .right .button-wallet p {
@@ -289,7 +291,7 @@ nav .right .sub-menu-currencies hr {
   }
 }
 
-@media screen and (min-width: 851px) {
+@media screen and (max-width: 851px) {
   nav .left .menu {
     display: none;
   }
@@ -299,8 +301,18 @@ nav .right .sub-menu-currencies hr {
   }
 }
 
-@media screen and (min-width: 575px) {
+@media screen and (max-width: 575px) {
   nav .right .button-currency p {
     display: none;
+  }
+
+  nav .right .menu {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  nav .right .menu {
+    gap: 8px;
   }
 }
