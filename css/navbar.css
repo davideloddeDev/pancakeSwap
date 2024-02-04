@@ -210,6 +210,7 @@ nav .right .languages .languages-submenu:hover {
 nav .right .languages .languages-submenu {
   display: none;
   position: absolute;
+  left: -86.5px;
   width: max-content;
   display: flex;
   align-items: stretch;
