@@ -113,12 +113,13 @@ nav .right .button-wallet {
   cursor: pointer;
 }
 
-nav .right .bunny-icon {
+nav .right .bunny-icon img {
+  margin-right: 8px;
   /* transition applicata sull'item di interesse */
   transition: transform 0.3s ease 0s;
 }
 
-nav .right .bunny-icon:hover {
+nav .right .bunny-icon:hover img {
   /* transform sullo stato dell'item di interesse */
   transform: scale(1.2);
 }
