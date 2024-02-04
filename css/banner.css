@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* da mettere su root.css ? */
+  /* da mettere su root.css */
   -webkit-font-smoothing: antialiased;
 }
 

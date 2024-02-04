@@ -58,7 +58,7 @@ nav .left .menu a {
 }
 
 nav .left .menu a:hover {
-  background-color: #eff4f5;
+  background-color: var(--tertiary-color, #eff4f5);
   border-radius: 16px;
 }
 
@@ -103,7 +103,7 @@ nav .right .button-opacity:hover {
 }
 
 nav .right .button-currency {
-  background-color: #eff4f5;
+  background-color: var(--tertiary-color, #eff4f5);
   color: var(--primary-color-news, #280d5f);
   padding-right: 8px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
@@ -135,7 +135,7 @@ nav .right .button-currency p {
 
 nav .right .button-wallet {
   background-color: var(--secondary-color, #1fc7d4);
-  color: #fff;
+  color: var(--colors-inverted-contrast, #fff);
   font-weight: 600;
   letter-spacing: 0.03em;
   padding: 0 16px;
