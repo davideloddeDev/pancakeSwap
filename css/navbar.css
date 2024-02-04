@@ -16,7 +16,6 @@ nav {
   font-weight: 400;
   /* da mettere su root.css */
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
 }
 
 nav a:hover {
