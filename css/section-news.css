@@ -10,7 +10,7 @@ body {
 .big-section-news {
     width: 100%;
     font-family: Kanit, sans-serif;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 
@@ -30,10 +30,12 @@ body {
     align-items: center;
     justify-content: center;
 }
-#freccia-sinistra{
+
+#freccia-sinistra {
     padding-right: 8px;
 }
-#freccia-destra{
+
+#freccia-destra {
     padding-left: 8px;
 }
 
@@ -112,13 +114,17 @@ body {
     flex: 0 0 auto;
     flex-direction: column;
 }
-
+.card:hover {
+    text-decoration: none;
+}
 .card {
     text-decoration: none;
 }
-.section-news>.bottom-section>.card>.inside-card{
+
+.section-news>.bottom-section>.card>.inside-card {
     height: 200px;
 }
+
 .section-news>.bottom-section>.card>.inside-card>img {
     border-top-left-radius: 24px;
     border-top-right-radius: 24px;
@@ -184,9 +190,8 @@ body {
 }
 
 .arrows {
-    padding: 6px;
     margin: 8px;
-    margin-top: 96px;
+    margin-top: 133px;
     border: 2px solid #1fc7d4;
     border-radius: 100%;
     height: 36px;
@@ -203,14 +208,61 @@ body {
         justify-content: start;
     }
 }
+
 @media screen and (max-width:768px) {
+    .big-section-news {
+        align-self: center;
+    }
+
     .container-news {
-        
+        width: 100%;
+    }
+
+    .section-news>.bottom-section {
+        width: 100%;
+        gap: 32px;
+    }
+
+    .section-news>.bottom-section {
+        gap: 32px;
+    }
+
+    #freccia-sinistra {
+        padding-right: 4px;
+    }
+
+    #freccia-destra {
+        padding-left: 4px;
+    }
+
+    .container-news>.container-arrows {
+        width: 43px
     }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:430px) {
+    .big-section-news {
+        width: 100%;
+    }
+
     .container-news {
-        
+        width: 100%;
+    }
+
+    .section-news>.bottom-section {
+        width: 280px;
+        gap: 32px;
+    }
+
+    #freccia-sinistra {
+        padding-right: 2px;
+    }
+
+    #freccia-destra {
+        padding-left: 2px;
+    }
+
+    .container-news>.container-arrows {
+        width: 43px
     }
 }

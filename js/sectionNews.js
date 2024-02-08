@@ -1,9 +1,9 @@
 function moveRight() {
     let i = 0;
     let id = setInterval(() => {
-        document.querySelector("#bottom-section").scrollLeft += 5;
+        document.querySelector("#bottom-section").scrollLeft += 1;
         i++;
-        if (i == 63) {
+        if (i == 312) {
             clearInterval(id);
         }
     }, 0);
@@ -12,9 +12,9 @@ function moveRight() {
 function moveLeft() {
     let i = 0;
     let id = setInterval(() => {
-        document.querySelector("#bottom-section").scrollLeft -= 5;
+        document.querySelector("#bottom-section").scrollLeft -= 1;
         i++;
-        if (i == 63) {
+        if (i == 312) {
             clearInterval(id);
         }
     }, 0);
