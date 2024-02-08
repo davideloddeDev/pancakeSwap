@@ -179,7 +179,7 @@ body {
 
     font-size: 9px;
     /* font-family: kanit, sans-serif;*/
-    color: black;
+    color: var(--footer-card-news);
 
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;

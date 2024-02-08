@@ -2,9 +2,14 @@
   --primary-color: #6136a8;
   --secondary-color: #1fc7d4;
   --border-radius: 16px;
+  /*Colors section news*/
   --primary-color-news: #280d5f;
   --secondary-color-news: #7645d9;
   --colors-text-subtle: #7a6eaa;
+  --footer-card-news: #000000;
+
+  
+  /*Colors section news*/
 }
 
 @font-face {
