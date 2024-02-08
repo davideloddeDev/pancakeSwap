@@ -1,24 +1,24 @@
-
 function moveRight() {
     let i = 0;
     let id = setInterval(() => {
-        document.documentElement.querySelector("#bottom-section").scrollLeft += 1;
+        document.querySelector("#bottom-section").scrollLeft += 5;
         i++;
-        if (i == 313) {
-            clearInterval(id)
+        if (i == 63) {
+            clearInterval(id);
         }
-    }, 0.1);
-
+    }, 0);
 }
 
 function moveLeft() {
     let i = 0;
     let id = setInterval(() => {
-        document.documentElement.querySelector("#bottom-section").scrollLeft -= 1;
+        document.querySelector("#bottom-section").scrollLeft -= 5;
         i++;
-        if (i == 313) {
-            clearInterval(id)
+        if (i == 63) {
+            clearInterval(id);
         }
-    }, 0.1);
-
+    }, 0);
 }
+
+document.querySelector("#freccia-destra").addEventListener("click", moveRight);
+document.querySelector("#freccia-sinistra").addEventListener("click", moveLeft);
