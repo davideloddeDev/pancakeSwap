@@ -11,9 +11,15 @@
   --news-card-border:#e7e3eb;
   --background-news: #ffffff;
   /*Colors section news*/
-
+  /* aggiunto da Martina */
+  --tertiary-color: #eff4f5;
+  --colors-background-alt: #fff;
+  --colors-inverted-contrast: #fff;
+  --colors-card-border: #e7e3eb;
+  --colors-text: #280d5f;
 }
 
+/* aggiunto da Martina */
 [data-theme="dark"]:root {
   --tertiary-color: #353547;
   --secondary-color-news: #a881fc;

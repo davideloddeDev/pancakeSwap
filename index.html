@@ -1,24 +1,249 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pancake Swap</title>
-  <link rel="stylesheet" href="css/section-news.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pancake Swap</title>
+    <link rel="stylesheet" href="css/section-news.css">
   <link rel="stylesheet" href="css/favorite.css">
   <link rel="stylesheet" href="css/footer.css">
   <link href="css/root.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Kanit' rel='stylesheet'>
-  <!-- Bootstrap -->
-  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-</head>
+  <link rel="stylesheet" href="css/scrollbar.css" type="text/css">
+  <link rel="stylesheet" href="css/banner.css" type="text/css">
+  <link rel="stylesheet" href="css/navbar.css" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" />
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    
+  </head>
+  <body>
+    
+    <!-- Banner -->
+  <div class="banner">
+    <div class="banner-content">
+      <img class="bunny-img" src="images/phishing-warning-bunny.webp" width="92" alt="phishing warning">
+      <div class="warning-banner">
+        <span class="phishing-warning">PHISHING WARNING:
+        <span class="check-url">please make sure you're visiting&nbsp;</span>
+        <span class="url-website">https://pancakeswap.finance</span>
+        <span class="check-url">&nbsp;- check the URL carefully.:&nbsp;</span>
+      </div>
+    </div>
+    <div class="close-button" onclick="endBanner()">
+      <img src="images/close-button.svg" width="20" height="20" alt="close button">
+    </div>
+  </div>
 
-<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="left">
+      <a href="#">
+        <img src="images/logo.svg" width="160" height="25" alt="logo" class="logo-desktop light">
+        <img src="images/logo_dark.svg" width="160" height="25" alt="logo" class="logo-desktop dark">
+        <img src="images/logo_mobile.svg" width="32" height="32" alt="logo" class="logo-mobile">
+      </a>
+      <ul class="menu">
+        <li>
+          <a href="#">Trade</a>
+          <ul class="sub-menu">
+            <li><a href="#">Swap</a></li>
+            <li><a href="#">Liquidity</a></li>
+            <li>
+              <a href="#">
+                Perpetual
+                <img src="images/arrow_down.svg" width="20" height="20" alt="arrow down" class="light">
+                <img src="images/arrow_down_dark.svg" width="20" height="20" alt="arrow down" class="dark">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Bridge
+                <img src="images/arrow_down.svg" width="20" height="20" alt="arrow down" class="light">
+                <img src="images/arrow_down_dark.svg" width="20" height="20" alt="arrow down" class="dark">
+              </a>
+            </li>
+            <li><a href="#">Limit (V2)</a></li>
+            <li><a href="#">By Crypto</a></li>
+            <li><a href="#">Trading Reward</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Earn</a>
+          <ul class="sub-menu">
+            <li><a href="#">Farms</a></li>
+            <li><a href="#">CAKE Staking</a></li>
+            <li><a href="#">Pools</a></li>
+            <li><a href="#">Position Manager</a></li>
+            <li><a href="#">Liquid Staking</a></li>
+            <li><a href="#">Simple Staking</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Game</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">
+                Gaming Marketplace
+                <img src="images/arrow_down.svg" width="20" height="20" alt="arrow down" class="light">
+                <img src="images/arrow_down_dark.svg" width="20" height="20" alt="arrow down" class="dark">
+              </a>
+            </li>
+            <li><a href="#">Prediction (BETA)</a></li>
+            <li><a href="#">Lottery</a></li>
+            <li><a href="#">Pottery (BETA)</a></li>
+          </ul>
+        </li>
+        </li>
+        <li>
+          <a href="#">NFT</a>
+          <ul class="sub-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Activity</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/three_dots.svg" width="20" height="20" alt="three_dots" class="light">
+            <img src="images/three_dots_dark.svg" width="20" height="20" alt="three_dots" class="dark">
+          </a>
+          <ul class="sub-menu">
+            <li><a href="#">Info</a></li>
+            <li><a href="#">IFO</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+            <li><a href="#">Voting</a></li>
+            <li class="border-top-bottom"><a href="#">Leaderboard</a></li>
+            <li>
+              <a href="#">
+                Blog
+                <img src="images/arrow_down.svg" width="20" height="20" alt="arrow down" class="light">
+                <img src="images/arrow_down_dark.svg" width="20" height="20" alt="arrow down" class="dark">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Docs
+                <img src="images/arrow_down.svg" width="20" height="20" alt="arrow down" class="light">
+                <img src="images/arrow_down_dark.svg" width="20" height="20" alt="arrow down" class="dark">
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul class="menu">
+        <li>
+          <a class="bunny-icon" href="#">
+            <img width="24" height="24" src="images/circle_bunny.svg" alt="bunny">
+            <span class="dollars">$2.542</span>
+          </a>
+        </li>
+        <li class="languages">
+          <img class="button-icon button-opacity light" src="images/globe.svg" alt="globe" width="24" height="24">
+          <img class="button-icon button-opacity dark" src="images/globe_dark.svg" alt="globe" width="24" height="24">
+          <div class="languages-sub-menu">
+            <a href="#">العربية</a>
+            <a href="#">বাংলা</a>
+            <a href="#">English</a>
+            <a href="#">Deutsch</a>
+            <a href="#">Ελληνικά</a>
+            <a href="#">Español</a>
+            <a href="#">Suomalainen</a>
+            <a href="#">Filipino</a>
+            <a href="#">Français</a>
+            <a href="#">हिंदी</a>
+            <a href="#">Magyar</a>
+            <a href="#">Bahasa Indonesia</a>
+            <a href="#">Italiano</a>
+            <a href="#">日本語</a>
+            <a href="#">한국어</a>
+            <a href="#">Nederlands</a>
+            <a href="#">Polski</a>
+            <a href="#">Português (Brazil)</a>
+            <a href="#">Português</a>
+            <a href="#">Română</a>
+            <a href="#">Русский</a>
+            <a href="#">Svenska</a>
+            <a href="#">தமிழ்</a>
+            <a href="#">Türkçe</a>
+            <a href="#">Українська</a>
+            <a href="#">Tiếng Việt</a>
+            <a href="#">简体中文</a>
+            <a href="#">繁體中文</a>
+          </div>
+        </li>
+        <li>
+          <img class="button-icon button-opacity light" src="images/settings.svg" alt="settings" width="24" height="24">
+          <img class="button-icon button-opacity dark" src="images/settings_dark.svg" alt="settings" width="24" height="24">
+        </li>
+        <li>
+          <img class="button-icon light" src="images/bell.svg" alt="bell" width="24" height="24">
+          <img class="button-icon dark" src="images/bell_dark.svg" alt="bell" width="24" height="24">
+        </li>
+        <li>
+          <a href="#">
+            <div class="button button-currency button-opacity">
+              <img src="images/button_currency.png" width="32" height="32" alt="crypto">
+              <p>BNB <span>Chain</span></p>
+              <img class="light" src="images/right_arrow.svg" width="24" height="24" alt="right arrow">
+              <img class="dark" src="images/right_arrow_dark.svg" width="24" height="24" alt="right arrow">
+            </div>
+          </a>
+          <ul class="sub-menu sub-menu-centered sub-menu-currencies">
+            <li>Select a Network</li>
+            <hr>
+            <li class="selected-currency"><a href="#">
+                <img src="images/button_currency.png" width="24" height="24" alt="crypto">BNB Chain</a>
+            </li>
+            <li><a href="#">
+                <img src="images/diamond.png" width="24" height="24" alt="diamond">Ethereum</a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/infinity.png" width="24" height="24" alt="infinity">
+                Polygon zkEVM
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/white-arrows.png" width="24" height="24" alt="white arrows">
+                zkSync Era
+              </a>
+            </li>
+            <li><a href="#">
+                <img src="images/assets.png" width="24" height="24" alt="assets">Arbitrum One
+              </a>
+            </li>
+            <li><a href="#">
+                <img src="images/linea.png" width="24" height="24" alt="linea">Linea
+              </a>
+            </li>
+            <li><a href="#">
+                <img src="images/base.png" width="24" height="24" alt="base">Base
+              </a>
+            </li>
+            <li><a href="#">
+                <img src="images/button_currency.png" width="24" height="24" alt="crypto">opBNB
+              </a>
+            </li>
+            <li><a href="#"><img src="images/aptos.png" width="24" height="24" alt="aptos">Aptos
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <div class="button button-wallet button-opacity">
+              <p>Connect <span>Wallet</span></p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-
-  
   <section class="big-section-news">
 
     <div class="container-news">
@@ -414,13 +639,16 @@
     </div>
   </footer>
 
+  <script src="js/navbar.js"></script>
   <script src="js/darkmode.js"></script>
   <script src="js/sectionNews.js"></script>
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="js/jquery-3.4.1.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap-4.4.1.js"></script>
-</body>
 
+
+  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="js/jquery-3.4.1.min.js"></script> 
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="js/popper.min.js"></script> 
+    <script src="js/bootstrap-4.4.1.js"></script>
+  </body>
 </html>
