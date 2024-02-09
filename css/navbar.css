@@ -8,7 +8,7 @@ nav {
   height: 56px;
   background-color: var(--colors-background-alt, #fff);
   border-bottom: 1px solid rgb(231, 227, 235);
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
   font-family: Kanit, sans-serif;
