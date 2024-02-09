@@ -40,6 +40,7 @@ body {
 
 .favorite-background {
     width: 100%;
+    height: 100%;
     position: absolute;
     padding: 20px;
 }
