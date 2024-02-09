@@ -2,9 +2,35 @@
   --primary-color: #6136a8;
   --secondary-color: #1fc7d4;
   --border-radius: 16px;
+  /*Colors section news*/
   --primary-color-news: #280d5f;
   --secondary-color-news: #7645d9;
   --colors-text-subtle: #7a6eaa;
+  --colors-text-footer-card: #000000;
+  --color-card-news: #ffffff;
+  --news-card-border:#e7e3eb;
+  --background-news: #ffffff;
+  /*Colors section news*/
+
+}
+
+[data-theme="dark"]:root {
+  --tertiary-color: #353547;
+  --secondary-color-news: #a881fc;
+  --colors-text-subtle: #b8add2;
+  --colors-background-alt: #27262c;
+  --colors-inverted-contrast: #191326;
+  --colors-card-border: #383241;
+  --colors-text: #f4eeff;
+  /*Colors section news*/
+  --primary-color-news: #f4eeff;
+  --secondary-color-news: #a881fc;
+  --colors-text-subtle: #b8add2;
+  --colors-text-footer-card: #ffffff;
+  --color-card-news: #27262c;
+  --news-card-border:#383241;
+  --background-news: #000000;
+  /*Colors section news*/
 }
 
 @font-face {
