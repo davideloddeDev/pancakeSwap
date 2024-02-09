@@ -13,7 +13,7 @@ body {
     display: block;
     align-items: center;
     justify-content: center;
-
+    background-color: var(--background-news);
 }
 
 .container-news {
@@ -113,6 +113,9 @@ body {
     display: flex;
     flex: 0 0 auto;
     flex-direction: column;
+
+    background-color: var(--color-card-news);
+    border-radius: 24px;
 }
 .card:hover {
     text-decoration: none;
@@ -138,8 +141,8 @@ body {
     flex-direction: row;
     justify-content: space-between;
 
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
+    border-left: 1px solid var(--news-card-border);
+    border-right: 1px solid var(--news-card-border);
 
     flex: 24px;
     padding: 16px;
@@ -158,8 +161,8 @@ body {
     padding-left: 16px;
     padding-right: 16px;
 
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
+    border-left: 1px solid var(--news-card-border);
+    border-right: 1px solid var(--news-card-border);
 
     display: flex;
     flex: 64px;
@@ -179,11 +182,11 @@ body {
 
     font-size: 9px;
     /* font-family: kanit, sans-serif;*/
-    color: var(--footer-card-news);
+    color: var(--colors-text-footer-card);
 
-    border-left: 1px solid lightgray;
-    border-right: 1px solid lightgray;
-    border-bottom: 3px solid lightgray;
+    border-left: 1px solid var(--news-card-border);
+    border-right: 1px solid var(--news-card-border);
+    border-bottom: 3px solid var(--news-card-border);
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
 
