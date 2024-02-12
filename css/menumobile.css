@@ -45,3 +45,9 @@ html[data-theme="dark"] .menu-mobile .light {
 html[data-theme="dark"] .menu-mobile .dark {
   display: block;
 }
+
+@media screen and (max-width: 575px) {
+  .menu-mobile .bottom-a.nft {
+    order: 1;
+  }
+}
