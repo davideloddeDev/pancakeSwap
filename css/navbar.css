@@ -105,7 +105,7 @@ nav .right .button-currency {
   box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
 }
 
-nav .right .button-icon, 
+nav .right .button-icon,
 nav .right .button-currency,
 nav .right .button-wallet {
   cursor: pointer;
@@ -224,7 +224,7 @@ nav .right .languages .languages-sub-menu {
   overflow: hidden;
   overflow-y: auto;
   background-color: var(--colors-background-alt, #fff);
-  box-shadow: 0px 2px 12px -8px rgba(25,19,38,.1),0px 1px 1px rgba(25,19,38,.05);
+  box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, .1), 0px 1px 1px rgba(25, 19, 38, .05);
   border-radius: 4px;
 }
 
@@ -281,10 +281,18 @@ nav .right .sub-menu-currencies hr {
   nav .right .button-currency p span {
     display: none;
   }
+
+  .menu-mobile {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 968px) {
   nav .left .logo-mobile {
+    display: none;
+  }
+
+  .menu-mobile {
     display: none;
   }
 }
@@ -298,6 +306,10 @@ nav .right .sub-menu-currencies hr {
   nav .left .logo-desktop.dark {
     display: none;
   }
+
+  .menu-mobile {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 851px) {
@@ -307,6 +319,28 @@ nav .right .sub-menu-currencies hr {
 
   nav .right .button-wallet span {
     display: none;
+  }
+
+  .menu-mobile {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-around;
+    background-color: var(--colors-background-alt, #fff);
+    color: var(--colors-text-subtle, #7a6eaa);
+    font-family: Kanit, sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-top: 10px;
+    padding-bottom: 4px;
+    border-top: 1px solid var(--colors-card-borde, #e7e3eb);
+  }
+
+  .bottom-a {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -318,5 +352,9 @@ nav .right .sub-menu-currencies hr {
   nav .right .menu {
     gap: 8px;
     margin-left: 0;
+  }
+
+  .menu-mobile {
+    display: block;
   }
 }
