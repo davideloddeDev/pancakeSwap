@@ -1,0 +1,41 @@
+@media screen and (min-width: 852px) {
+  .menu-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 851px) {
+  .menu-mobile {
+    display: flex;
+  }
+}
+
+.menu-mobile {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  justify-content: space-around;
+  background-color: var(--colors-background-alt, #fff);
+  color: var(--colors-text-subtle, #7a6eaa);
+  font-family: Kanit, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  border-top: 1px solid var(--colors-card-borde, #e7e3eb);
+}
+
+.menu-mobile .bottom-a {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-mobile .dark,
+html[data-theme="dark"] .menu-mobile .light {
+  display: none;
+}
+
+html[data-theme="dark"] .menu-mobile .dark {
+  display: block;
+}
