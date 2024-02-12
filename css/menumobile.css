@@ -15,12 +15,8 @@
   bottom: 0;
   width: 100%;
   justify-content: space-around;
+  align-items: center;
   background-color: var(--colors-background-alt, #fff);
-  color: var(--colors-text-subtle, #7a6eaa);
-  font-family: Kanit, sans-serif;
-  font-size: 10px;
-  font-weight: 400;
-  line-height: 1.5;
   padding-top: 10px;
   padding-bottom: 4px;
   border-top: 1px solid var(--colors-card-borde, #e7e3eb);
@@ -29,6 +25,16 @@
 .menu-mobile .bottom-a {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-mobile .bottom-a span {
+  color: var(--colors-text-subtle, #7a6eaa);
+  font-family: Kanit, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .menu-mobile .dark,
