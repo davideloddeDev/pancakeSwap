@@ -1,22 +1,791 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pancake Swap</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
-  </head>
-  <body>
-    
-    
-	  
-	  
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
-    <script src="js/jquery-3.4.1.min.js"></script> 
-    <!-- Include all compiled plugins (below), or include individual files as needed --> 
-    <script src="js/popper.min.js"></script> 
-    <script src="js/bootstrap-4.4.1.js"></script>
-  </body>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pancake Swap</title>
+  <!-- Bootstrap -->
+  <link href="css/root.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/favoriteDex.css">
+  <link rel="stylesheet" href="css/section-news.css">
+  <link rel="stylesheet" href="css/favorite.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link href="css/root.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/scrollbar.css" type="text/css">
+  <link rel="stylesheet" href="css/banner.css" type="text/css">
+  <link rel="stylesheet" href="css/navbar.css" type="text/css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" />
+</head>
+
+<body>
+  <!-- Banner -->
+  <div class="banner">
+    <div class="banner-content">
+      <img class="bunny-img" src="images/phishing-warning-bunny.webp" width="92" alt="phishing warning">
+      <div class="warning-banner">
+        <span class="phishing-warning">PHISHING WARNING:</span>
+        <span class="check-url">please make sure you're visiting&nbsp;</span>
+        <span class="url-website">https://pancakeswap.finance</span>
+        <span class="check-url">&nbsp;- check the URL carefully.&nbsp;</span>
+      </div>
+    </div>
+    <div class="close-button" onclick="endBanner()">
+      <img src="images/close-button.svg" width="20" height="20" alt="close button">
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav>
+    <div class="left">
+      <a href="#">
+        <img src="images/logo.svg" width="160" height="25" alt="logo" class="logo-desktop light">
+        <img src="images/logo_dark.svg" width="160" height="25" alt="logo" class="logo-desktop dark">
+        <img src="images/logo_mobile.svg" width="32" height="32" alt="logo" class="logo-mobile">
+      </a>
+      <ul class="menu">
+        <li>
+          <a href="#">Trade</a>
+          <ul class="sub-menu">
+            <li><a href="#">Swap</a></li>
+            <li><a href="#">Liquidity</a></li>
+            <li>
+              <a href="#">
+                Perpetual
+                <img src="images/arrow_down.svg" width="20" height="20" alt="arrow down" class="light">
+                <img src="images/arrow_down_dark.svg" width="20" height="20" alt="arrow down" class="dark">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Bridge
+                <img src="images/arrow_down.svg" width="20" height="20" alt="arrow down" class="light">
+                <img src="images/arrow_down_dark.svg" width="20" height="20" alt="arrow down" class="dark">
+              </a>
+            </li>
+            <li><a href="#">Limit (V2)</a></li>
+            <li><a href="#">By Crypto</a></li>
+            <li><a href="#">Trading Reward</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Earn</a>
+          <ul class="sub-menu">
+            <li><a href="#">Farms</a></li>
+            <li><a href="#">CAKE Staking</a></li>
+            <li><a href="#">Pools</a></li>
+            <li><a href="#">Position Manager</a></li>
+            <li><a href="#">Liquid Staking</a></li>
+            <li><a href="#">Simple Staking</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">Game</a>
+          <ul class="sub-menu">
+            <li>
+              <a href="#">
+                Gaming Marketplace
+                <img src="images/arrow_down.svg" width="20" height="20" alt="arrow down" class="light">
+                <img src="images/arrow_down_dark.svg" width="20" height="20" alt="arrow down" class="dark">
+              </a>
+            </li>
+            <li><a href="#">Prediction (BETA)</a></li>
+            <li><a href="#">Lottery</a></li>
+            <li><a href="#">Pottery (BETA)</a></li>
+          </ul>
+        </li>
+
+        <li>
+          <a href="#">NFT</a>
+          <ul class="sub-menu">
+            <li><a href="#">Overview</a></li>
+            <li><a href="#">Collections</a></li>
+            <li><a href="#">Activity</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/three_dots.svg" width="20" height="20" alt="three_dots" class="light">
+            <img src="images/three_dots_dark.svg" width="20" height="20" alt="three_dots" class="dark">
+          </a>
+          <ul class="sub-menu">
+            <li><a href="#">Info</a></li>
+            <li><a href="#">IFO</a></li>
+            <li><a href="#">Affiliate Program</a></li>
+            <li><a href="#">Voting</a></li>
+            <li class="border-top-bottom"><a href="#">Leaderboard</a></li>
+            <li>
+              <a href="#">
+                Blog
+                <img src="images/arrow_down.svg" width="20" height="20" alt="arrow down" class="light">
+                <img src="images/arrow_down_dark.svg" width="20" height="20" alt="arrow down" class="dark">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Docs
+                <img src="images/arrow_down.svg" width="20" height="20" alt="arrow down" class="light">
+                <img src="images/arrow_down_dark.svg" width="20" height="20" alt="arrow down" class="dark">
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="right">
+      <ul class="menu">
+        <li>
+          <a class="bunny-icon" href="#">
+            <img width="24" height="24" src="images/circle_bunny.svg" alt="bunny">
+            <span class="dollars">$2.542</span>
+          </a>
+        </li>
+        <li class="languages">
+          <img class="button-icon button-opacity light" src="images/globe.svg" alt="globe" width="24" height="24">
+          <img class="button-icon button-opacity dark" src="images/globe_dark.svg" alt="globe" width="24" height="24">
+          <div class="languages-sub-menu">
+            <a href="#">العربية</a>
+            <a href="#">বাংলা</a>
+            <a href="#">English</a>
+            <a href="#">Deutsch</a>
+            <a href="#">Ελληνικά</a>
+            <a href="#">Español</a>
+            <a href="#">Suomalainen</a>
+            <a href="#">Filipino</a>
+            <a href="#">Français</a>
+            <a href="#">हिंदी</a>
+            <a href="#">Magyar</a>
+            <a href="#">Bahasa Indonesia</a>
+            <a href="#">Italiano</a>
+            <a href="#">日本語</a>
+            <a href="#">한국어</a>
+            <a href="#">Nederlands</a>
+            <a href="#">Polski</a>
+            <a href="#">Português (Brazil)</a>
+            <a href="#">Português</a>
+            <a href="#">Română</a>
+            <a href="#">Русский</a>
+            <a href="#">Svenska</a>
+            <a href="#">தமிழ்</a>
+            <a href="#">Türkçe</a>
+            <a href="#">Українська</a>
+            <a href="#">Tiếng Việt</a>
+            <a href="#">简体中文</a>
+            <a href="#">繁體中文</a>
+          </div>
+        </li>
+        <li>
+          <img class="button-icon button-opacity light" src="images/settings.svg" alt="settings" width="24" height="24">
+          <img class="button-icon button-opacity dark" src="images/settings_dark.svg" alt="settings" width="24"
+            height="24">
+        </li>
+        <li>
+          <img class="button-icon light" src="images/bell.svg" alt="bell" width="24" height="24">
+          <img class="button-icon dark" src="images/bell_dark.svg" alt="bell" width="24" height="24">
+        </li>
+        <li>
+          <a href="#">
+            <div class="button button-currency button-opacity">
+              <img src="images/button_currency.png" width="32" height="32" alt="crypto">
+              <p>BNB <span>Chain</span></p>
+              <img class="light" src="images/right_arrow.svg" width="24" height="24" alt="right arrow">
+              <img class="dark" src="images/right_arrow_dark.svg" width="24" height="24" alt="right arrow">
+            </div>
+          </a>
+          <ul class="sub-menu sub-menu-centered sub-menu-currencies">
+            <li>Select a Network</li>
+            <hr>
+            <li class="selected-currency"><a href="#">
+                <img src="images/button_currency.png" width="24" height="24" alt="crypto">BNB Chain</a>
+            </li>
+            <li><a href="#">
+                <img src="images/diamond.png" width="24" height="24" alt="diamond">Ethereum</a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/infinity.png" width="24" height="24" alt="infinity">
+                Polygon zkEVM
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="images/white-arrows.png" width="24" height="24" alt="white arrows">
+                zkSync Era
+              </a>
+            </li>
+            <li><a href="#">
+                <img src="images/assets.png" width="24" height="24" alt="assets">Arbitrum One
+              </a>
+            </li>
+            <li><a href="#">
+                <img src="images/linea.png" width="24" height="24" alt="linea">Linea
+              </a>
+            </li>
+            <li><a href="#">
+                <img src="images/base.png" width="24" height="24" alt="base">Base
+              </a>
+            </li>
+            <li><a href="#">
+                <img src="images/button_currency.png" width="24" height="24" alt="crypto">opBNB
+              </a>
+            </li>
+            <li><a href="#"><img src="images/aptos.png" width="24" height="24" alt="aptos">Aptos
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <div class="button button-wallet button-opacity">
+              <p>Connect <span>Wallet</span></p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- sezione favoriteDex -->
+  <section class="favoriteDex">
+    <div class="favoriteDex-container">
+      <div class="favoriteDex-Sx">
+        <h1>Everyone's</h1>
+        <h2><span>Favorite</span> DEX</h2>
+        <p>Trade, earn, and own crypto on the all-in-one multichain DEX</p>
+        <div class="favoriteDex-buttons">
+          <button class="favoriteDex-primaryButton">Connect Wallet</button>
+          <button class="favoriteDex-secondaryButton">Trade Now</button>
+        </div>
+      </div>
+      <div class="favoriteDex-Dx">
+        <div class="video-container">
+          <video src="images/favoriteDex/video1.webm"></video>
+          <video src="images/favoriteDex/star.webm"></video>
+          <video src="images/favoriteDex/hero-cake.webm"></video>
+          <video src="images/favoriteDex/rock01.webm"></video>
+          <video src="images/favoriteDex/rock02.webm"></video>
+          <video src="images/favoriteDex/rock03.webm"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="bottom-background">
+    <svg viewBox="0 0 1660 339" class="sc-grXZZQ ktVOoD slide-svg-light" width="100%" color="text"
+      xmlns="http://www.w3.org/2000/svg">
+      <path d="M804 167.023C520.5 167.023 267.5 290.522 0 304.5V339H1660V0.5C1358.83 0.5 1104 167.023 804 167.023Z"
+        fill="url(#paint0_linear_light)"></path>
+      <defs>
+        <lineargradient id="paint0_linear_light" x1="830" y1="84" x2="830" y2="339" gradientUnits="userSpaceOnUse">
+          <stop stop-color="white" stop-opacity="0.48"></stop>
+          <stop offset="0.566389" stop-color="white" stop-opacity="0.35"></stop>
+          <stop offset="1" stop-color="white"></stop>
+        </lineargradient>
+      </defs>
+    </svg>
+  </div>
+
+
+  <!-- section news -->
+  <section class="big-section-news">
+
+    <div class="container-news">
+
+      <div class="container-arrows" id="freccia-sinistra">
+        <img class="arrows" src="images/img-news/freccia-sinistra.svg" alt="freccia sinistra">
+      </div>
+
+      <div class="section-news">
+
+        <section class="top-section">
+
+          <h2 class="div1">Featured</h2>
+          <h2 class="div2">News</h2>
+
+        </section>
+
+        <section class="bottom-section" id="bottom-section">
+          <a class="card" href="#">
+
+            <div class="inside-card">
+              <img src="images/img-news/img1.png" alt="img1">
+            </div>
+            <div class="header-card">
+
+              <div>From [Cointelegraph]</div>
+              <div>Dec 28, 2023</div>
+
+            </div>
+
+            <div class="main-card">
+              <div>PancakeSwap seeks 300M CAKE token supply revamp</div>
+            </div>
+
+            <div class="footer-card">
+              Decentralized exchange (DEX) PancakeSwap is looking to slash the maximum supply of its ecosystem token,
+              CAKE,
+              from 750 million to 450 million.
+            </div>
+
+          </a>
+
+          <a class="card" href="#">
+            <div class="inside-card">
+              <img src="images/img-news/img2.png" alt="img2">
+            </div>
+            <div class="header-card">
+
+              <div>From [Cointelegraph]</div>
+              <div>Dec 28, 2023</div>
+
+            </div>
+
+            <div class="main-card">
+              <div>PancakeSwap Proposes to Reduce CAKE Token Supply by 300 Million</div>
+            </div>
+
+            <div class="footer-card">
+              PancakeSwap floated a vote proposal to reduce the maximum supply of CAKE from 750 million to 450 million.
+              The
+              voting period began in early hours on Thursday and will last until 8:00 am UTC on Friday.
+            </div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="inside-card">
+              <img src="images/img-news/img3.png" alt="img3">
+            </div>
+            <div class="header-card">
+
+              <div>From [Cointelegraph]</div>
+              <div>Nov 23, 2023</div>
+
+            </div>
+
+            <div class="main-card">
+              <div>PancakeSwap implements new ‘Gauges’ voting system</div>
+            </div>
+
+            <div class="footer-card">
+              The decentralized exchange launched a new feature that allows governance tokenholders to vote on which
+              pools
+              will receive the most rewards.
+            </div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="inside-card">
+              <img src="images/img-news/img4.jpeg" alt="img4">
+            </div>
+            <div class="header-card">
+
+              <div>From [The Block]</div>
+              <div>Nov 15, 2023</div>
+
+            </div>
+
+            <div class="main-card">
+              <div>PancakeSwap Launches Gaming Marketplace</div>
+            </div>
+
+            <div class="footer-card">
+              The decentralized exchange PancakeSwap has launched a gaming marketplace. The new platform lets developers
+              build, launch and update games with web3 elements, such as cryptocurrency and NFTs.
+            </div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="inside-card">
+              <img src="images/img-news/img5.jpg" alt="img5">
+            </div>
+            <div class="header-card">
+
+              <div>From [Cointelegraph]</div>
+              <div>Oct 30, 2023</div>
+
+            </div>
+
+            <div class="main-card">
+              <div>PancakeSwap adds portfolio manager function in partnership with Bril</div>
+            </div>
+
+            <div class="footer-card">
+              Decentralized crypto exchange PancakeSwap now has portfolio manager functionality, according to an Oct. 30
+              announcement. The feature has been added in partnership with decentralized finance (DeFi) protocol Bril
+              Finance.
+            </div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="inside-card">
+              <img src="images/img-news/img6.jpg" alt="img6">
+            </div>
+            <div class="header-card">
+
+              <div>From [Decrypt]</div>
+              <div>Aug 31, 2023</div>
+
+            </div>
+
+            <div class="main-card">
+              <div>PancakeSwap Expands to Coinbase-Incubated Base Network</div>
+            </div>
+
+            <div class="footer-card">
+              PancakeSwap joins DeFi heavyweights like Uniswap, SushiSwap, and 1inch launching on the buzzy layer-2
+              network
+              Base.
+            </div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="inside-card">
+              <img src="images/img-news/img7.jpg" alt="img7">
+            </div>
+            <div class="header-card">
+
+              <div>From [CoinDesck]</div>
+              <div>Aug 10, 2023</div>
+
+            </div>
+
+            <div class="main-card">
+              <div>PancakeSwap Deploys on Ethereum Scaling Network Arbitrum in Expansion Drive</div>
+            </div>
+
+            <div class="footer-card">
+              The decentralized exchange has joined several networks this year in the search for new users and revenue
+              streams.
+            </div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="inside-card">
+              <img src="images/img-news/img8.jpg" alt="img8">
+            </div>
+            <div class="header-card">
+
+              <div>From [Blockworks]</div>
+              <div>Jul 28, 2023</div>
+
+            </div>
+
+            <div class="main-card">
+              <div>zkSync Era welcomes PancakeSwap to the ecosystem</div>
+            </div>
+
+            <div class="footer-card">
+              ZkSync Era will be the third zero-knowledge platform on which PancakeSwap will launch.
+            </div>
+          </a>
+
+          <a class="card" href="#">
+            <div class="inside-card">
+              <img src="images/img-news/img9.png" alt="img9">
+            </div>
+            <div class="header-card">
+
+              <div>From [Cointelegraph]</div>
+              <div>Jul 11, 2023</div>
+
+            </div>
+
+            <div class="main-card">
+              <div>PancakeSwap: Supporting the DeFi ecosystem with an always-available infrastructure</div>
+            </div>
+
+            <div class="footer-card">
+              PancakeSwap implements Google Cloud to maintain platform availability at all times so that users can trade
+              seamlessly around the clock.
+            </div>
+          </a>
+
+        </section>
+
+
+      </div>
+
+      <div class="container-arrows" id="freccia-destra">
+        <img class="arrows" src="images/img-news/freccia-destra.svg" alt="freccia destra">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- section favorite -->
+  <section class="favorite">
+
+    <svg class="favorite-background sc-grXZZQ ktVOoD sc-hYSVoV bALoIu" viewBox="0 0 1956 1956" color="text" width="20px"
+      xmlns="http://www.w3.org/2000/svg">
+      <g filter="url(#filter0_f)">
+        <path
+          d="M978 20L987.526 796.229L1078.14 25.248L1006.47 798.221L1177.18 40.9346L1025.11 802.182L1274.04 66.8879L1043.23 808.07L1367.65 102.823L1060.64 815.819L1457 148.348L1077.14 825.345L1541.1 202.962L1092.55 836.544L1619.03 266.067L1106.71 849.292L1689.93 336.973L1119.46 863.451L1753.04 414.902L1130.65 878.865L1807.65 499L1140.18 895.365L1853.18 588.346L1147.93 912.77L1889.11 681.962L1153.82 930.89L1915.07 778.821L1157.78 949.526L1930.75 877.862L1159.77 968.474L1936 978L1159.77 987.526L1930.75 1078.14L1157.78 1006.47L1915.07 1177.18L1153.82 1025.11L1889.11 1274.04L1147.93 1043.23L1853.18 1367.65L1140.18 1060.64L1807.65 1457L1130.65 1077.14L1753.04 1541.1L1119.46 1092.55L1689.93 1619.03L1106.71 1106.71L1619.03 1689.93L1092.55 1119.46L1541.1 1753.04L1077.14 1130.65L1457 1807.65L1060.64 1140.18L1367.65 1853.18L1043.23 1147.93L1274.04 1889.11L1025.11 1153.82L1177.18 1915.07L1006.47 1157.78L1078.14 1930.75L987.526 1159.77L978 1936L968.474 1159.77L877.862 1930.75L949.526 1157.78L778.821 1915.07L930.89 1153.82L681.962 1889.11L912.77 1147.93L588.346 1853.18L895.365 1140.18L499 1807.65L878.865 1130.65L414.902 1753.04L863.451 1119.46L336.973 1689.93L849.292 1106.71L266.067 1619.03L836.544 1092.55L202.962 1541.1L825.345 1077.14L148.348 1457L815.819 1060.64L102.823 1367.65L808.07 1043.23L66.8879 1274.04L802.182 1025.11L40.9346 1177.18L798.221 1006.47L25.248 1078.14L796.229 987.526L20 978L796.229 968.474L25.248 877.862L798.221 949.526L40.9346 778.821L802.182 930.89L66.8879 681.962L808.07 912.77L102.823 588.346L815.819 895.365L148.348 499L825.345 878.865L202.962 414.902L836.544 863.451L266.067 336.973L849.292 849.292L336.973 266.067L863.451 836.544L414.902 202.962L878.865 825.345L499 148.348L895.365 815.819L588.346 102.823L912.77 808.07L681.962 66.8879L930.89 802.182L778.821 40.9346L949.526 798.221L877.862 25.248L968.474 796.229L978 20Z"
+          fill="url(#paint0_radial)" fill-opacity="0.1"></path>
+      </g>
+      <defs>
+        <filter id="filter0_f" x="0" y="0" width="1956" height="1956" filterUnits="userSpaceOnUse"
+          color-interpolation-filters="sRGB">
+          <feflood flood-opacity="0" result="BackgroundImageFix"></feflood>
+          <feblend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feblend>
+          <fegaussianblur stdDeviation="10" result="effect1_foregroundBlur"></fegaussianblur>
+        </filter>
+        <radialgradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+          gradientTransform="translate(978 978) rotate(90) scale(958)">
+          <stop offset="0.114547" stop-color="white" stop-opacity="0"></stop>
+          <stop offset="0.374975" stop-color="white"></stop>
+          <stop offset="1" stop-color="white" stop-opacity="0"></stop>
+        </radialgradient>
+      </defs>
+    </svg>
+
+    <div class="favorite-container">
+      <div class="favorite-top">
+        <img class="img-sx" src="images/favorite/tl.png" alt="immagine decorativa">
+        <img class="img-dx" src="images/favorite/tr.png" alt="immagine decorativa">
+      </div>
+      <div class="favorite-center">
+        <h2>Join Everyone's Favorite DEX Now!</h2>
+        <button>Connect Wallet</button>
+      </div>
+      <div class="favorite-bottom">
+        <img class="img-sx" src="images/favorite/bl.png" alt="immagine decorativa">
+        <img class="img-dx" src="images/favorite/br.png" alt="immagine decorativa">
+      </div>
+    </div>
+
+
+  </section>
+
+  <!-- footer -->
+  
+  <footer class="body-f">
+    <div class="container-f">
+
+      <div class="main-f">
+
+        <ul class="list-f">
+          <li class="line-f"><span>Ecosystem</span></li>
+          <li class="line-f"><a href="#">Trade</a></li>
+          <li class="line-f"><a href="#">Earn</a></li>
+          <li class="line-f"><a href="#">Game</a></li>
+          <li class="line-f"><a href="#">NFT</a></li>
+          <li class="line-f"><a href="#">Tokenomics</a></li>
+          <li class="line-f"><a href="#">Litepaper</a></li>
+          <li class="line-f"><a href="#">CAKE Emission Projection</a></li>
+          <li class="line-f"><a href="#">Merchandise</a></li>
+        </ul>
+        <ul class="list-f">
+          <li class="line-f"><span>Businness</span></li>
+          <li class="line-f"><a href="#">Farms And Syrup Pools</a></li>
+          <li class="line-f"><a href="#">IFO</a></li>
+          <li class="line-f"><a href="#">NFT Marketplace</a></li>
+        </ul>
+        <ul class="list-f">
+          <li class="line-f"><span>Developers</span></li>
+          <li class="line-f"><a href="#">Contributing</a></li>
+          <li class="line-f"><a href="#">Github</a></li>
+          <li class="line-f"><a href="#">Bug Bounty</a></li>
+
+        </ul>
+        <ul class="list-f">
+          <li class="line-f"><span>Support</span></li>
+          <li class="line-f"><a href="#">Contact</a></li>
+          <li class="line-f"><a href="#">Troubleshooting</a></li>
+          <li class="line-f"><a href="#">Documentation</a></li>
+
+        </ul>
+        <ul class="list-f">
+          <li class="line-f"><span>About</span></li>
+          <li class="line-f"><a href="#">Terms of Service</a></li>
+          <li class="line-f"><a href="#">Blog</a></li>
+          <li class="line-f"><a href="#">Brand Assets</a></li>
+          <li class="line-f"><a href="#">Careers</a></li>
+        </ul>
+        <ul class="alogo-f">
+          <p><img src="images/color-white.png" alt="color-white" class="logo-f"></p>
+        </ul>
+
+      </div>
+
+      <div class="socials-f">
+        <a target="_blank" rel="nonreferrer noopener" href="https://twitter.com/pancakeswap" class="socials-f">
+          <img class="social-back" src="images/twitter_icon.png" style="display: flex; order: 1;">
+        </a>
+
+        <div class="tele-dropdown">
+          <button class="tele-dropbtn">
+            <a target="_blank" rel="nonreferrer noopener" class="socials-f">
+              <img class="social-back" src="images/telegram_icon.png">
+
+          </button>
+          </a>
+          <div class="tele-dropdown-content">
+            <a href="#">English</a>
+            <a href="#">Bahasa Indonesia</a>
+            <a href="#">中文</a>
+            <a href="#">Tiếng Việt</a>
+            <a href="#">Italiano</a>
+            <a href="#">Русский</a>
+            <a href="#">Türkiye</a>
+            <a href="#">Português</a>
+            <a href="#">Español</a>
+            <a href="#">日本語</a>
+            <a href="#">Français</a>
+            <a href="#">Deutsch</a>
+            <a href="#">Filipino</a>
+            <a href="#">ქართული ენა</a>
+            <a href="#">हिन्दी</a>
+            <a href="#">Announcements</a>
+
+          </div>
+        </div>
+
+        <a target="_blank" rel="nonreferrer noopener" href="https://reddit.com/r/pancakeswap" class="socials-f">
+          <img class="social-back" src="images/reddit_icon.png">
+        </a>
+        <a target="_blank" rel="nonreferrer noopener" href="https//instagram.com/pancakeswap_official"
+          class="socials-f">
+          <img class="social-back" src="images/instagram_icon.png">
+        </a>
+        <a target="_blank" rel="nonreferrer noopener" href="https://github.com/pancakeswap/" class="socials-f">
+          <img class="social-back" src="images/git_icon.png">
+        </a>
+        <a target="_blank" rel="nonreferrer noopener" href="https://discord.gg/pancakeswap" class="socials-f">
+          <img class="social-back" src="images/discord_icon.png">
+        </a>
+        <a target="_blank" rel="nonreferrer noopener" href="https://www.youtube.com/@pancakeswap_official"
+          class="socials-f">
+          <img class="social-back" src="images/youtube_icon.png">
+        </a>
+      </div>
+
+
+      <div class="line-2"></div>
+      <div class="sub-footer">
+        <div class="media-line"></div>
+        <img src="images/color-white.png" alt="color-white" class="media-logo">
+
+        <div class="media-line-b"></div>
+
+        <div class="footer-sx">
+          <label class="switch-label">
+            <input type="checkbox" id="dayNightSwitch" class="slider" onclick="darkMode()">
+            <div class="slider darkmode" id="darkmode">
+              <svg class="sun" viewBox="0 0 24 24" color="backgroundAlt" xmlns="http://www.w3.org/2000/svg">
+
+                <path
+                  d="M5.66 4.2L6.05 4.59C6.44 4.97 6.44 5.61 6.05 5.99L6.04 6C5.65 6.39 5.03 6.39 4.64 6L4.25 5.61C3.86 5.23 3.86 4.6 4.25 4.21L4.26 4.2C4.64 3.82 5.27 3.81 5.66 4.2Z">
+                </path>
+                <path
+                  d="M1.99 10.95H3.01C3.56 10.95 4 11.39 4 11.95V11.96C4 12.51 3.56 12.95 3 12.94H1.99C1.44 12.94 1 12.5 1 11.95V11.94C1 11.39 1.44 10.95 1.99 10.95Z">
+                </path>
+                <path
+                  d="M12 1H12.01C12.56 1 13 1.44 13 1.99V2.96C13 3.51 12.56 3.95 12 3.94H11.99C11.44 3.94 11 3.5 11 2.95V1.99C11 1.44 11.44 1 12 1Z">
+                </path>
+                <path
+                  d="M18.34 4.2C18.73 3.82 19.36 3.82 19.75 4.21C20.14 4.6 20.14 5.22 19.75 5.61L19.36 6C18.98 6.39 18.35 6.39 17.96 6L17.95 5.99C17.56 5.61 17.56 4.98 17.95 4.59L18.34 4.2Z">
+                </path>
+                <path
+                  d="M18.33 19.7L17.94 19.31C17.55 18.92 17.55 18.3 17.95 17.9C18.33 17.52 18.96 17.51 19.35 17.9L19.74 18.29C20.13 18.68 20.13 19.31 19.74 19.7C19.35 20.09 18.72 20.09 18.33 19.7Z">
+                </path>
+                <path
+                  d="M20 11.95V11.94C20 11.39 20.44 10.95 20.99 10.95H22C22.55 10.95 22.99 11.39 22.99 11.94V11.95C22.99 12.5 22.55 12.94 22 12.94H20.99C20.44 12.94 20 12.5 20 11.95Z">
+                </path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6 11.95C6 8.64 8.69 5.95 12 5.95C15.31 5.95 18 8.64 18 11.95C18 15.26 15.31 17.95 12 17.95C8.69 17.95 6 15.26 6 11.95ZM12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z">
+                </path>
+                <path
+                  d="M12 22.9H11.99C11.44 22.9 11 22.46 11 21.91V20.95C11 20.4 11.44 19.96 11.99 19.96H12C12.55 19.96 12.99 20.4 12.99 20.95V21.91C12.99 22.46 12.55 22.9 12 22.9Z">
+                </path>
+                <path
+                  d="M5.66 19.69C5.27 20.08 4.64 20.08 4.25 19.69C3.86 19.3 3.86 18.68 4.24 18.28L4.63 17.89C5.02 17.5 5.65 17.5 6.04 17.89L6.05 17.9C6.43 18.28 6.44 18.91 6.05 19.3L5.66 19.69Z">
+                </path>
+              </svg>
+              <input type="checkbox" id="moon" class="slider">
+              <svg class="moon" viewBox="0 0 24 24" color="backgroundAlt" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M4.1534 13.6089L4.15362 13.61C4.77322 16.8113 7.42207 19.3677 10.647 19.8853L10.6502 19.8858C13.0412 20.2736 15.2625 19.6103 16.9422 18.2833C11.3549 16.2878 7.9748 10.3524 9.26266 4.48816C5.69846 5.77194 3.35817 9.51245 4.1534 13.6089ZM10.0083 2.21054C4.76622 3.2533 1.09895 8.36947 2.19006 13.9901C2.97006 18.0201 6.28006 21.2101 10.3301 21.8601C13.8512 22.4311 17.0955 21.1608 19.2662 18.8587C19.2765 18.8478 19.2866 18.837 19.2968 18.8261C19.4385 18.6745 19.5757 18.5184 19.7079 18.3581C19.7105 18.355 19.713 18.3519 19.7156 18.3487C19.8853 18.1426 20.0469 17.9295 20.2001 17.7101C20.4101 17.4001 20.2401 16.9601 19.8701 16.9201C19.5114 16.8796 19.1602 16.8209 18.817 16.7452C18.7964 16.7406 18.7758 16.736 18.7552 16.7313C18.6676 16.7114 18.5804 16.6903 18.4938 16.6681C18.4919 16.6676 18.4901 16.6672 18.4882 16.6667C13.0234 15.2647 9.72516 9.48006 11.4542 4.03417C11.4549 4.03214 11.4555 4.03012 11.4562 4.0281C11.4875 3.92954 11.5205 3.83109 11.5552 3.73278C11.5565 3.72911 11.5578 3.72543 11.5591 3.72175C11.6768 3.38921 11.8136 3.05829 11.9701 2.73005C12.1301 2.39005 11.8501 2.01005 11.4701 2.03005C11.1954 2.04379 10.924 2.06848 10.6561 2.10368C10.6517 2.10427 10.6472 2.10486 10.6428 2.10545C10.4413 2.13221 10.2418 2.16492 10.0446 2.2034C10.0325 2.20576 10.0204 2.20814 10.0083 2.21054Z">
+                </path>
+              </svg>
+            </div>
+          </label>
+          <div class="dropdown">
+            <button class="dropbtn">
+              <svg class="lan" viewbox="0 0 24 24" color="backgroundAlt" width="30px"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM18.92 8H15.97C15.65 6.75 15.19 5.55 14.59 4.44C16.43 5.07 17.96 6.35 18.92 8ZM12 4.04C12.83 5.24 13.48 6.57 13.91 8H10.09C10.52 6.57 11.17 5.24 12 4.04ZM4.26 14C4.1 13.36 4 12.69 4 12C4 11.31 4.1 10.64 4.26 10H7.64C7.56 10.66 7.5 11.32 7.5 12C7.5 12.68 7.56 13.34 7.64 14H4.26ZM5.08 16H8.03C8.35 17.25 8.81 18.45 9.41 19.56C7.57 18.93 6.04 17.66 5.08 16ZM8.03 8H5.08C6.04 6.34 7.57 5.07 9.41 4.44C8.81 5.55 8.35 6.75 8.03 8ZM12 19.96C11.17 18.76 10.52 17.43 10.09 16H13.91C13.48 17.43 12.83 18.76 12 19.96ZM14.34 14H9.66C9.57 13.34 9.5 12.68 9.5 12C9.5 11.32 9.57 10.65 9.66 10H14.34C14.43 10.65 14.5 11.32 14.5 12C14.5 12.68 14.43 13.34 14.34 14ZM14.59 19.56C15.19 18.45 15.65 17.25 15.97 16H18.92C17.96 17.65 16.43 18.93 14.59 19.56ZM16.36 14C16.44 13.34 16.5 12.68 16.5 12C16.5 11.32 16.44 10.66 16.36 10H19.74C19.9 10.64 20 11.31 20 12C20 12.69 19.9 13.36 19.74 14H16.36Z">
+                </path>
+              </svg>
+              EN
+            </button>
+            <div class="dropdown-content">
+              <a href="#">العربية</a>
+              <a href="#">বাংলা</a>
+              <a href="#">English</a>
+              <a href="#">Deutsch</a>
+              <a href="#">Ελληνικά</a>
+              <a href="#">Español</a>
+              <a href="#">Suomalainen</a>
+              <a href="#">Filipino</a>
+              <a href="#">Français</a>
+              <a href="#">हिंदी</a>
+              <a href="#">Magyar</a>
+              <a href="#">Bahasa Indonesia</a>
+              <a href="#">Italiano</a>
+              <a href="#">日本語</a>
+              <a href="#">한국어</a>
+              <a href="#">Nederlands</a>
+              <a href="#">Polski</a>
+              <a href="#">Português (Brazil)</a>
+              <a href="#">Português</a>
+              <a href="#">Română</a>
+              <a href="#">Русский</a>
+              <a href="#">Svenska</a>
+              <a href="#">தமிழ்</a>
+              <a href="#">Türkçe</a>
+              <a href="#">Українська</a>
+              <a href="#">Tiếng Việt</a>
+              <a href="#">简体中文</a>
+              <a href="#">繁體中文</a>
+            </div>
+          </div>
+
+        </div>
+        <div class="footer-dx">
+          <div>
+            <img src="images/psBlueWp.svg" width="28px" alt="lower-icon" class="coin-f">
+            $2541
+          </div>
+          <button class="buycake-btn">
+            <div class="buycake-font">
+              Buy CAKE
+            </div>
+            <svg viewBox="0 0 24 24" color="backgroundAlt" ml="0.5rem" width="22px" xmlns="http://www.w3.org/2000/svg"
+              class="sc-grXZZQ kuAtEf">
+              <path
+                d="M5 13H16.17L11.29 17.88C10.9 18.27 10.9 18.91 11.29 19.3C11.68 19.69 12.31 19.69 12.7 19.3L19.29 12.71C19.68 12.32 19.68 11.69 19.29 11.3L12.71 4.7C12.32 4.31 11.69 4.31 11.3 4.7C10.91 5.09 10.91 5.72 11.3 6.11L16.17 11H5C4.45 11 4 11.45 4 12C4 12.55 4.45 13 5 13Z">
+
+              </path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/darkmode.js"></script>
+  <script src="js/sectionNews.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap-4.4.1.js"></script>
+</body>
+
 </html>

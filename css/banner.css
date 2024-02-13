@@ -1,0 +1,88 @@
+.banner {
+  background: linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);;
+  height: 70px;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* da mettere su root.css */
+  -webkit-font-smoothing: antialiased;
+}
+
+.banner-content {
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.warning-banner {
+  font-family: Kanit, sans-serif;
+  font-size: 14px;
+  background: rgba(39, 38, 44, 0.4);
+  border-radius: 16px;
+  padding: 8px;
+  width: 60%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.phishing-warning {
+  font-weight: 600;
+  color: #ffb237;
+  text-transform: uppercase;
+}
+
+.check-url {
+  font-weight: 400;
+  color: rgb(189, 194, 196)
+}
+
+.url-website {  
+  font-weight: 600;
+  color: rgb(255, 255, 255)
+}
+
+.close-button {
+  width: 44px;
+  height: 48px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close-button:hover {
+  cursor: pointer;
+  opacity: 0.65;
+}
+
+  @media screen and (max-width: 851px) {
+  .banner {
+    background: linear-gradient(0deg, rgba(39, 38, 44, 0.4), rgba(39, 38, 44, 0.4)), linear-gradient(rgb(128, 81, 214) 0%, rgb(73, 34, 134) 100%);
+    height: auto;
+    padding: 12px;
+  }
+
+  .bunny-img {
+    display: none;
+  }
+
+  .warning-banner {
+    width: 100%;
+    height: auto;
+    background: none;
+    padding: 0;
+    display: block;
+  }
+
+  .close-button {
+    width: 28px;
+  }
+}

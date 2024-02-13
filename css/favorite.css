@@ -1,0 +1,129 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('../fonts/Kanit/Kanit-Black.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-BlackItalic.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-Bold.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-BoldItalic.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-ExtraBold.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-ExtraBoldItalic.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-ExtraLight.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-ExtraLightItalic.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-Italic.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-Light.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-LightItalic.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-Medium.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-MediumItalic.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-Regular.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-SemiBold.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-SemiBoldItalic.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-Thin.ttf') format('ttf'),
+        url('../fonts/Kanit/Kanit-ThinItalic.ttf') format('ttf');
+    /* Aggiungi altre font-face regole se il font è disponibile in diversi formati */
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+    /* Sostituisci 'sans-serif' con una famiglia di fallback se il font principale non è disponibile */
+}
+
+
+.favorite {
+    width: 100%;
+    height: 496px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(118, 69, 217) 0%, rgb(81, 33, 177) 100%);
+    background-size: 50%;
+    background-position: center center;
+}
+
+.favorite-background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 20px;
+}
+
+.favorite-container {
+    width: 640px;
+}
+
+.favorite-top {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: moveOblique 3s linear infinite;
+    margin-bottom: 10px;
+}
+
+.favorite-top img {
+    height: 100px;
+}
+
+.img-sx {
+    margin-right: 25%;
+}
+
+.img-dx {
+    margin-left: 25%;
+}
+
+.favorite-center {
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.favorite-center h2 {
+    color: #e7e2f2;
+    font-family: Kanit, sans-serif;
+    font-weight: 600;
+}
+
+.favorite-center button {
+    background-color: #3bc7d4;
+    color: #e7e2f2;
+    border-color: #3bc7d4;
+    border-radius: 16px;
+    padding: 0 24px;
+    height: 48px;
+    margin-top: 24px;
+}
+
+.favorite-bottom {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: moveOblique 5s linear infinite;
+}
+
+.favorite-bottom img {
+    height: 100px;
+}
+
+@keyframes moveOblique {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(10px, 10px);
+    }
+
+    50% {
+        transform: translate(20px, 20px);
+    }
+
+    75% {
+        transform: translate(10px, 10px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
