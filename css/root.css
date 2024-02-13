@@ -18,7 +18,8 @@
   --colors-card-border: #e7e3eb;
   --colors-text: #280d5f;
   --colors-background: linear-gradient(139.73deg, #ecf7ff 0%, #eef4ff 100%);
-
+  --ecosystem-card-bg-color: #ffffff;
+  --ecosystem-background: #faf9fa;
 }
 
 /* aggiunto da Martina */
@@ -40,6 +41,8 @@
   --background-news: #000000;
   /*Colors section news*/
   --colors-background: linear-gradient(139.73deg, #08060b 0%, #1b142b 100%);
+  --ecosystem-card-bg-color: linear-gradient(139.73deg, #313d5c,#3d2a54)
+  --ecosystem-background: #08060b;
 }
 
 @font-face {
