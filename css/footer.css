@@ -341,7 +341,7 @@ input:checked+.slider:before {
     z-index: 1;
     overflow-y: scroll;
 
-
+    
 }
 
 .tele-dropdown-content a {
