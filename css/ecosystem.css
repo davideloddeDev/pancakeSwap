@@ -1,8 +1,12 @@
+
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: 'Kanit', sans-serif;
+  font-size: 100%;
+  vertical-align: baseline;
 }
 
 @font-face {
@@ -15,13 +19,28 @@
     url("/font/Kanit-LightItalic.ttf"), url("/font/Kanit-Medium.ttf");
 }
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(250, 250, 250);
+}
+
+/* body img {
+  height: auto;
+  max-width: 100%;
+}
+ */
 .ecosystem {
-  margin-top: 60px;
+  padding-top: 60px;
+  padding-left: 16px;
+  padding-right: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(250, 250, 250);
+  
+  max-width: 1200px;
 }
 
 .header {
@@ -38,39 +57,62 @@
   margin-bottom: 24px;
 }
 
-h1 {
+
+
+.discover {
+  display: inline-block;
   color: #280d5f;
   font-weight: 600;
   font-size: 40px;
 }
 
-.card-title {
-  display: block;
-  font-weight: 600;
-  padding-left: 12px;
-  margin-bottom: 24px;
-  font-size: 32px;
-  line-height: 110%;
-  color: #7645d9;
-}
-
-span {
+.the-ecosystem {
+  display: inline-block;
   color: #7645d9;
   font-weight: 600;
   font-size: 40px;
 }
+
+
+.card-title {
+  font-size: 32px;
+  font-weight: 600;
+  padding-left: 12px;
+  margin-bottom: 24px;
+  line-height: 110%;
+  color: #7645d9;
+}
+
 
 .trade {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1152px;
-  height: 417.19px;
+  /* width: 1152px; */
+  /* height: 417.19px; */
   background-color: rgb(255, 255, 255);
   margin-top: 48px;
   padding: 48px 24px 24px;
   border-radius: 24px;
+}
+
+.nft-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.trade-container {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.earn-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
   gap: 32px;
 }
 
@@ -82,9 +124,11 @@ span {
 
 .articles-container {
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  gap: 16px;
+  align-items: center;
+  
+  vertical-align: baseline;
+  /* justify-content: space-between; */
+  gap: 24px;
 }
 
 
@@ -100,13 +144,13 @@ span {
   flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
-  width: 1152px;
-  height: 417.19px;
+  /* width: 1152px; */
+  /* height: 417.19px; */
   background-color: rgb(255, 255, 255);
   margin-top: 48px;
   padding: 48px 24px 24px;
   border-radius: 24px;
-  gap: 32px;
+  /* gap: 32px; */
 }
 
 .earn-img {
@@ -120,13 +164,13 @@ span {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 1152px;
-  height: 417.19px;
+  /* width: 1152px; */
+  /* height: 417.19px; */
   background-color: rgb(255, 255, 255);
   margin-top: 48px;
   padding: 48px 24px 24px;
   border-radius: 24px;
-  gap: 32px;
+  /* gap: 32px; */
 }
 
 .game-nft-img {
@@ -139,21 +183,25 @@ span {
 
 article {
   display: flex;
+  vertical-align: baseline;
   flex-direction: column;
-  flex-grow: 1;
   justify-content: space-between;
-  /* width: 141.59px;
-  height: 286px; */
+  flex-grow: 1;
+  flex-basis: 20%;
+  height: 286px;
   gap: 12px;
   padding: 12px;
 }
 
-section img {
+article img {
+  
   width: 108px;
   height: 108px;
 }
 
 .caption {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 14px;
   color: rgb(40, 13, 94);
   font-weight: 400;
@@ -182,9 +230,11 @@ h4 {
 }
 
 .img-hover {
+  position: absolute;
   width: 108px;
   height: 108px;
-  display: none;
+  opacity: 0;
+  /* display: none; */
 }
 
 article:hover {
@@ -199,12 +249,126 @@ article:hover .card-svg{
 }
 
 article:hover img {
-  display: none;
+  transition: transparent 0.25s ease-in-out 0s;
 }
 
 article:hover .img-hover {
   display: flex;
   justify-content: center;
+  opacity: 100%;
+  transition: opacity 0.25s ease-in-out 0s;
+}
+
+@media screen and (max-width: 1200px){
+  .articles-container {
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .caption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  article {
+    width: 183px;
+    flex-basis: calc(33.3% - 48px);
+  }
+  article.nft-marketplace {
+    width: 33%;
+  }
+
+
+
+}
+
+@media screen and (max-width: 851px){
+  .articles-container {
+    flex-wrap: wrap;
+    gap: 24px;
+    align-self: center;
+    width: fit-content;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .caption {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  h4 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  article {
+    /* width: 183px; */
+    height: auto;
+    flex-basis: calc(33.3% - 48px);
+  }
+
+  .trade-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .earn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .nft-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+}
+@media screen and (max-width: 368px){
+  .articles-container {
+    flex-wrap: wrap;
+    gap: 24px;
+    align-self: center;
+    width: fit-content;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .caption {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+
+  article {
+    /* width: 183px; */
+    height: auto;
+    flex-basis: calc(50% - 24px);
+    padding: 4px;
+  }
+
+  .trade-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .earn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .nft-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
 }
 
 
