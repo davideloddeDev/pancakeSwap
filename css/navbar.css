@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  height: 56px;
+  background-color: var(--colors-background-alt, #fff);
+  border-bottom: 1px solid rgb(231, 227, 235);
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Kanit, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  /* da mettere su root.css */
+  -webkit-font-smoothing: antialiased;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+nav .left {
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+
+nav .left .menu,
+nav .right .menu {
+  list-style: none;
+  display: flex;
+  margin-left: 24px;
+  margin-bottom: 0;
+}
+
+nav .left .menu li,
+nav .right .menu li {
+  position: relative;
+}
+
+nav .left .menu a,
+nav .right .menu a {
+  margin: 3px 0;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--colors-text-subtle, #7a6eaa);
+  font-size: 16px;
+}
+
+nav .left .menu a {
+  padding: 0 16px;
+}
+
+nav .left .menu a:hover {
+  background-color: var(--tertiary-color, #eff4f5);
+  border-radius: 16px;
+}
+
+nav .dark,
+html[data-theme="dark"] nav .light {
+  display: none;
+}
+
+html[data-theme="dark"] nav .dark {
+  display: block;
+}
+
+nav .right {
+  padding-right: 16px;
+}
+
+nav .right .menu {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /* per renderli equidistanti gli uni dagli altri,
+  simmetricamente, rispetto al sito */
+}
+
+nav .right .dollars {
+  color: var(--colors-text-subtle, #7a6eaa);
+  font-weight: bold;
+}
+
+nav .right .button {
+  height: 32px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+}
+
+nav .right .button-opacity:hover {
+  opacity: 0.65;
+}
+
+nav .right .button-currency {
+  background-color: var(--tertiary-color, #eff4f5);
+  color: var(--colors-text, #280d5f);
+  padding-right: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
+}
+
+nav .right .button-icon, 
+nav .right .button-currency,
+nav .right .button-wallet {
+  cursor: pointer;
+}
+
+nav .right .bunny-icon img {
+  margin-right: 8px;
+  /* transition applicata sull'item di interesse */
+  transition: transform 0.3s ease 0s;
+}
+
+nav .right .bunny-icon:hover img {
+  /* transform sullo stato dell'item di interesse */
+  transform: scale(1.2);
+}
+
+nav .right .button-currency p {
+  font-weight: 600;
+  padding-right: 4px;
+  padding-left: 8px;
+  margin-bottom: 0;
+}
+
+nav .right .button-wallet {
+  background-color: var(--secondary-color, #1fc7d4);
+  color: var(--colors-inverted-contrast, #fff);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0 16px;
+  box-shadow: rgba(14, 14, 44, 0.4) 0px -1px 0px 0px inset;
+  line-height: 100%;
+  text-align: center;
+}
+
+nav .right .button-wallet p {
+  margin-bottom: 0;
+}
+
+.sub-menu {
+  background-color: var(--colors-background-alt, #fff);
+  border: 1px solid var(--colors-card-border, #e7e3eb);
+  border-radius: 16px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  width: 280px;
+  position: absolute;
+  top: 55px;
+  left: 0;
+  display: none;
+  z-index: 1001;
+}
+
+.sub-menu-centered {
+  /* (width sub-menu - width parent li) / 2 */
+  left: -63.5px;
+}
+
+.sub-menu li {
+  font-size: 16px;
+  color: var(--colors-text-subtle, #7a6eaa);
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sub-menu li:first-child {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.sub-menu li:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.sub-menu li:hover {
+  background-color: var(--tertiary-color, #eff4f5);
+}
+
+nav .left .menu .sub-menu li a,
+nav .right .menu .sub-menu li a {
+  padding: 0 16px;
+  width: 100%;
+}
+
+nav .right .menu .sub-menu li a {
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+nav .left .menu>li:hover .sub-menu,
+nav .right .menu>li:hover .sub-menu,
+.sub-menu:hover {
+  display: block;
+}
+
+nav .right .languages {
+  position: relative;
+}
+
+nav .right .languages:hover .languages-sub-menu,
+nav .right .languages .languages-sub-menu:hover {
+  display: flex;
+}
+
+nav .right .languages .languages-sub-menu {
+  display: none;
+  position: absolute;
+  left: -86.5px;
+  width: max-content;
+  align-items: stretch;
+  flex-direction: column;
+  padding: 16px;
+  max-height: 400px;
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: var(--colors-background-alt, #fff);
+  box-shadow: 0px 2px 12px -8px rgba(25,19,38,.1),0px 1px 1px rgba(25,19,38,.05);
+  border-radius: 4px;
+}
+
+nav .right .languages .languages-sub-menu a {
+  padding: 0 8px;
+  margin: 0;
+  font-weight: 600;
+  color: var(--colors-text, #280d5f);
+  border-radius: 8px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  min-height: 32px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav .right .languages .languages-sub-menu a:hover {
+  opacity: 0.65;
+}
+
+nav .right .sub-menu-currencies li a {
+  line-height: 1.5;
+  color: var(--colors-text, #280d5f);
+}
+
+nav .right .sub-menu-currencies li.selected-currency a {
+  color: var(--secondary-color-news, #7645d9);
+  font-weight: 600;
+}
+
+nav .right .menu li ul.sub-menu-currencies>li:first-child {
+  padding: 8px 16px;
+  height: auto;
+}
+
+nav .right .menu li ul.sub-menu-currencies>li:first-child:hover {
+  background-color: inherit;
+}
+
+nav .right .sub-menu-currencies hr {
+  margin: 4px 0;
+}
+
+
+.border-top-bottom {
+  border-top: 1px solid var(--colors-card-border, #e7e3eb);
+  border-bottom: 1px solid var(--colors-card-border, #e7e3eb);
+}
+
+@media screen and (max-width: 1079px) {
+  nav .right .button-currency p span {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 968px) {
+  nav .left .logo-mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 967px) {
+  nav .right .menu .bunny-icon {
+    display: none;
+  }
+
+  nav .left .logo-desktop,
+  nav .left .logo-desktop.dark {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 851px) {
+  nav .left .menu {
+    display: none;
+  }
+
+  nav .right .button-wallet span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  nav .right .button-currency p {
+    display: none;
+  }
+
+  nav .right .menu {
+    gap: 8px;
+    margin-left: 0;
+  }
+}

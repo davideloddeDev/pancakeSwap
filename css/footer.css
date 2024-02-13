@@ -12,6 +12,8 @@
 
 }
 
+
+
 .container-f {
     
     display: flex;
@@ -124,10 +126,11 @@
     flex-direction: row;
     justify-content: space-between;
     order: 4;
-    width: 97%;
+    width: 100%;
     margin-top: 20px;
+    margin-bottom: 20px;
     gap: 24px;
-    margin-left: 42px;
+    
 
 }
 
@@ -478,7 +481,7 @@ input:checked+.slider:before {
 
     }
 
- 
+
 
 
 }

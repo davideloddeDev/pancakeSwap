@@ -26,6 +26,7 @@ body {
     /* Sostituisci 'sans-serif' con una famiglia di fallback se il font principale non è disponibile */
 }
 
+
 .favorite {
     width: 100%;
     height: 496px;
@@ -39,6 +40,7 @@ body {
 
 .favorite-background {
     width: 100%;
+    height: 100%;
     position: absolute;
     padding: 20px;
 }
