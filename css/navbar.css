@@ -210,6 +210,7 @@ nav .right .languages {
 nav .right .languages:hover .languages-sub-menu,
 nav .right .languages .languages-sub-menu:hover {
   display: flex;
+  z-index: 100;
 }
 
 nav .right .languages .languages-sub-menu {
