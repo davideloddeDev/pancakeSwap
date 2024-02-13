@@ -1,4 +1,5 @@
 :root {
+  --background-principal: #fff;
   --primary-color: #6136a8;
   --secondary-color: #1fc7d4;
   --border-radius: 16px;
@@ -17,12 +18,17 @@
   --colors-inverted-contrast: #fff;
   --colors-card-border: #e7e3eb;
   --colors-text: #280d5f;
+  /*Colors Favorite Dex*/
   --colors-background: linear-gradient(139.73deg, #ecf7ff 0%, #eef4ff 100%);
+  --colors-favorite-dex-title: #280d5f;
+  --colors-favorite-dex-span: #7645d9;
+  --colors-favorite-dex-p: #7a6eaa;
 
 }
 
 /* aggiunto da Martina */
 [data-theme="dark"]:root {
+  --background-principal: #08060c;
   --tertiary-color: #353547;
   --secondary-color-news: #a881fc;
   --colors-text-subtle: #b8add2;
@@ -39,7 +45,11 @@
   --news-card-border:#383241;
   --background-news: #000000;
   /*Colors section news*/
+  /*Colors Favorite Dex*/
   --colors-background: linear-gradient(139.73deg, #08060b 0%, #1b142b 100%);
+  --colors-favorite-dex-title: #f4eeff;
+  --colors-favorite-dex-span: #a881fd;
+  --colors-favorite-dex-p: #fff;
 }
 
 @font-face {
@@ -69,4 +79,5 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Kanit', sans-serif;
+  background: var(--background-principal);
 }
