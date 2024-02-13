@@ -41,7 +41,7 @@
   --background-news: #000000;
   /*Colors section news*/
   --colors-background: linear-gradient(139.73deg, #08060b 0%, #1b142b 100%);
-  --ecosystem-card-bg-color: linear-gradient(139.73deg, #313d5c,#3d2a54)
+  --ecosystem-card-bg-color: linear-gradient(139.73deg, #313d5c 0%,#3d2a54 100%);
   --ecosystem-background: #08060b;
 }
 
