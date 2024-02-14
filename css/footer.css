@@ -415,6 +415,7 @@ input:checked+.slider:before {
 
     .body-f {
         justify-content: left;
+        margin-bottom: 50px;
     }
 
     .sub-footer {
