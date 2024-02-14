@@ -84,4 +84,6 @@ body {
   font-family: 'Kanit', sans-serif;
   background: var(--background-principal);
   overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
 }
