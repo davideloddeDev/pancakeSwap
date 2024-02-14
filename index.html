@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -15,10 +15,10 @@
   <link rel="stylesheet" href="css/section-news.css">
   <link rel="stylesheet" href="css/favorite.css">
   <link rel="stylesheet" href="css/footer.css">
-  <link href="css/root.css" rel="stylesheet">
   <link rel="stylesheet" href="css/scrollbar.css" type="text/css">
   <link rel="stylesheet" href="css/banner.css" type="text/css">
   <link rel="stylesheet" href="css/navbar.css" type="text/css">
+  <link rel="stylesheet" href="css/menumobile.css" type="text/css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600&display=swap" />
 </head>
 
@@ -28,7 +28,7 @@
     <div class="banner-content">
       <img class="bunny-img" src="images/phishing-warning-bunny.webp" width="92" alt="phishing warning">
       <div class="warning-banner">
-        <span class="phishing-warning">PHISHING WARNING:</span>
+        <span class="phishing-warning">PHISHING WARNING:
         <span class="check-url">please make sure you're visiting&nbsp;</span>
         <span class="url-website">https://pancakeswap.finance</span>
         <span class="check-url">&nbsp;- check the URL carefully.&nbsp;</span>
@@ -248,6 +248,32 @@
       </ul>
     </div>
   </nav>
+
+  <div class="menu-mobile">
+    <a href="#" class="bottom-a">
+      <img src="images/mobile/trade.svg" alt="trade" width="21" height="22" class="light">
+      <img src="images/mobile/trade_dark.svg" alt="trade" width="21" height="22" class="dark">
+      <span>Trade</span>
+    </a>
+    <a href="#" class="bottom-a">
+      <img src="images/mobile/earn.svg" alt="earn" width="21" height="22" class="light">
+      <img src="images/mobile/earn_dark.svg" alt="earn" width="21" height="22" class="dark">
+      <span>Earn</span>
+    </a>
+    <a href="#" class="bottom-a">
+      <img src="images/mobile/game.svg" alt="game" width="21" height="22">
+      <span>Game</span>
+    </a>
+    <a href="#" class="bottom-a nft">
+      <img src="images/mobile/nft.svg" alt="NFT" width="20" height="20" class="light">
+      <img src="images/mobile/nft_dark.svg" alt="NFT" width="20" height="20" class="dark">
+      <span>NFT</span>
+    </a>
+    <a href="#" class="bottom-a">
+      <img src="images/mobile/dots.svg" alt="dots" width="21" height="22" class="light">
+      <img src="images/mobile/dots_dark.svg" alt="dots" width="21" height="22" class="dark">
+    </a>
+  </div>
 
   <!-- sezione favoriteDex -->
   <section class="favoriteDex">
@@ -1309,10 +1335,8 @@
       </div>
     </div>
   </footer>
-
   <script src="js/navbar.js"></script>
-  <script src="js/darkmode.js"></script>
-  <script src="js/sectionNews.js"></script>
+
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->

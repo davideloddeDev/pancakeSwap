@@ -105,7 +105,7 @@ nav .right .button-currency {
   box-shadow: rgba(0, 0, 0, 0.1) 0px -2px 0px inset;
 }
 
-nav .right .button-icon, 
+nav .right .button-icon,
 nav .right .button-currency,
 nav .right .button-wallet {
   cursor: pointer;
@@ -210,6 +210,7 @@ nav .right .languages {
 nav .right .languages:hover .languages-sub-menu,
 nav .right .languages .languages-sub-menu:hover {
   display: flex;
+  z-index: 100;
 }
 
 nav .right .languages .languages-sub-menu {
@@ -224,7 +225,7 @@ nav .right .languages .languages-sub-menu {
   overflow: hidden;
   overflow-y: auto;
   background-color: var(--colors-background-alt, #fff);
-  box-shadow: 0px 2px 12px -8px rgba(25,19,38,.1),0px 1px 1px rgba(25,19,38,.05);
+  box-shadow: 0px 2px 12px -8px rgba(25, 19, 38, .1), 0px 1px 1px rgba(25, 19, 38, .05);
   border-radius: 4px;
 }
 
