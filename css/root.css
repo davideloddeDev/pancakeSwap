@@ -23,7 +23,8 @@
   --colors-favorite-dex-title: #280d5f;
   --colors-favorite-dex-span: #7645d9;
   --colors-favorite-dex-p: #7a6eaa;
-
+  --ecosystem-card-bg-color: #ffffff;
+  --ecosystem-background: #faf9fa;
 }
 
 /* aggiunto da Martina */
@@ -50,6 +51,8 @@
   --colors-favorite-dex-title: #f4eeff;
   --colors-favorite-dex-span: #a881fd;
   --colors-favorite-dex-p: #fff;
+  --ecosystem-card-bg-color: linear-gradient(139.73deg, #313d5c 0%,#3d2a54 100%);
+  --ecosystem-background: #08060b;
 }
 
 @font-face {
