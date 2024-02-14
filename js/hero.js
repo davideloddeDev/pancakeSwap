@@ -1,10 +1,10 @@
 const sliderHero = document.querySelector('.slider-hero');
 const slides = document.querySelectorAll('.slide-hero');
-const position1 = document.querySelector('.position1')
-const position2 = document.querySelector('.position2')
-const position3 = document.querySelector('.position3')
-const position4 = document.querySelector('.position4')
-const position5 = document.querySelector('.position5')
+const position1 = document.querySelector('#position1')
+const position2 = document.querySelector('#position2')
+const position3 = document.querySelector('#position3')
+const position4 = document.querySelector('#position4')
+const position5 = document.querySelector('#position5')
 let counter = 0;
 
 setInterval(() => {
