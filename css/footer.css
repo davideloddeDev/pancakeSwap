@@ -1,8 +1,5 @@
 .body-f {
-    /*
-    position: absolute;
-    bottom:0;
-    */
+
     font-size: 16px;
     line-height: 1;
     font-family: Kanit, sans-serif;
@@ -15,12 +12,7 @@
 
 }
 
-@media screen and (min-width:852px) {
-    .body-f {
-        justify-content: center;
-    }
 
-}
 
 .container-f {
     
@@ -35,6 +27,7 @@
 
     display: flex;
     flex-direction: row;
+    gap: 32px;
     order: 1;
 
 }
@@ -93,10 +86,12 @@
     /* ---------------------------------------------------------------------------------------------------------- */
     border-bottom: 1px solid #27262c;
     display: flex;
-    margin-left: 24px;
+    gap: 24px;
     width: 23px;
     height: 23px;
     order: 2;
+    margin-left: 4px;
+    
 }
 
 .socials-f a {
@@ -116,12 +111,14 @@
     background-color: #b8add2;
 }
 
+
+
 .line-2 {
     /* ---------------------------------------------------------------------------------------------------------- */
     border-top: 1px solid lightgray;
     order: 3;
     opacity: 15%;
-    margin-left: 45px;
+    margin-left: 8px;
     margin-top: 20px;
 }
 
@@ -302,7 +299,7 @@ input:checked+.slider:before {
 
 
 .buycake-btn {
-
+    border: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,7 +347,7 @@ input:checked+.slider:before {
     z-index: 1;
     overflow-y: scroll;
 
-
+    
 }
 
 .tele-dropdown-content a {
@@ -411,6 +408,7 @@ input:checked+.slider:before {
     }
     .main-f {
         flex-direction: column;
+        gap: 0px;
     }
 
     .body-f {
@@ -433,7 +431,9 @@ input:checked+.slider:before {
 
 @media screen and (max-width : 600px) {
 
-
+    .main-f{
+        gap: 0px;
+    }
     .container-f{
         width: 100%;
     }
@@ -487,6 +487,8 @@ input:checked+.slider:before {
         width: 100%;
 
     }
+
+   
 
 
 
