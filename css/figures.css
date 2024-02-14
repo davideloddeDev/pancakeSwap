@@ -1,0 +1,43 @@
+.figures-container {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 40px;
+}
+
+.figures-container .figures-cake {
+  color: var(--primary-color-news, #280d5f);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+.figures-container .figures-figures {
+  color: var(--secondary-color-news, #7645d9);
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 24px;
+}
+
+
+
+
+/* @media screen and (max-width: 1079px) {
+ 
+}
+
+@media screen and (min-width: 968px) {
+  
+}
+
+@media screen and (max-width: 967px) {
+
+}
+
+@media screen and (max-width: 851px) {
+ 
+}
+
+@media screen and (max-width: 575px) {
+
+} */
