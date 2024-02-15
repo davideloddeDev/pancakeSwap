@@ -86,4 +86,9 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
 }
