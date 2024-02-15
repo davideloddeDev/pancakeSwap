@@ -25,6 +25,7 @@
 }
 
 .button-up.clicked {
+    border: none;
     outline: none;
   }
 
