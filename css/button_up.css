@@ -2,7 +2,7 @@
     position: fixed;
     right: 18px;
     bottom: 110px;
-    background-color: #1FC7D4;
+    background-color: var(--button-up-background);
     width: 48px;
     height: 48px;
     border: none;
@@ -17,11 +17,11 @@
 }
 
 .button-up-arrow{
-    fill: #f4eeff;
+    fill: var(--button-up-fill);
 }
 
 .button-up:hover {
-    background-color: rgba(31, 199, 212, 0.6); /* Cambia l'opacità del colore di sfondo al passaggio del mouse */
+    background-color: var(--button-up-background-hover); /* Cambia l'opacità del colore di sfondo al passaggio del mouse */
 }
 
 .button-up.clicked {

@@ -25,6 +25,10 @@
   --colors-favorite-dex-p: #7a6eaa;
   --ecosystem-card-bg-color: #ffffff;
   --ecosystem-background: #faf9fa;
+  /* button up */
+  --button-up-background: #1FC7D4;
+  --button-up-background-hover: rgba(31, 199, 212, 0.6);
+  --button-up-fill: #f4eeff;
 }
 
 /* aggiunto da Martina */
@@ -53,6 +57,10 @@
   --colors-favorite-dex-p: #fff;
   --ecosystem-card-bg-color: linear-gradient(139.73deg, #313d5c 0%,#3d2a54 100%);
   --ecosystem-background: #08060b;
+  /* button up */
+  --button-up-background: #1FC7D4;
+  --button-up-background-hover: rgba(31, 199, 212, 0.6);
+  --button-up-fill: #191e31;
 }
 
 @font-face {

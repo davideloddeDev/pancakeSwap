@@ -29,7 +29,7 @@
 }
 
 .favoriteDexMobile .favoriteDex-container {
-    width: 1000px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
