@@ -1,20 +1,23 @@
+:root {
+  --colors-warning: #ffb237;
+  --colors-white: #ffffff;
+}
+
 .community {
   background: linear-gradient(180deg,#6fb6f1 0%,#eaf2f6 100%);
   box-sizing: border-box;
-  padding: 0 16px;
+  padding: 48px 0;
 }
 
 .community .medium-container {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 48px 0px;
+  padding: 0 16px;
   z-index: 1;
 }
 
 .community .medium-container .small-container {
-  /* position: relative; */
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid var(--colors-card-border, #e7e3eb);
   border-radius: 72px;
@@ -22,6 +25,13 @@
   backdrop-filter: blur(20px);
   padding: 16px;
   z-index: 2;
+}
+
+.community .medium-container .small-container .join-and-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .community .medium-container .small-container 
@@ -65,6 +75,7 @@
   justify-content: center;
   align-items: center;
   flex-flow: wrap;
+  gap: 24px;
 }
 
 .community .medium-container .small-container 
@@ -77,11 +88,12 @@
   border-radius: 32px;
   box-shadow: rgb(60, 23, 134) 0px 4px 0px 0px;
   padding: 24px;
+  box-sizing: border-box;
 }
 
 .community .medium-container .small-container 
 .join-and-social .numbers-posts .numbers .white {
-  color: white;
+  color: var(--colors-white, #ffffff);
   font-size: 16px;
   font-weight: 600;
   line-height: 1.5;
@@ -89,7 +101,7 @@
 
 .community .medium-container .small-container 
 .join-and-social .numbers-posts .numbers .yellow {
-  color: #ffb237;
+  color: var(--colors-warning, #ffb237);
   font-size: 40px;
   font-weight: 600;
   line-height: 110%;
