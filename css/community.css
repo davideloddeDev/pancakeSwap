@@ -1,10 +1,10 @@
-.big-container {
+.community {
   background: linear-gradient(180deg,#6fb6f1 0%,#eaf2f6 100%);
   box-sizing: border-box;
   padding: 0 16px;
 }
 
-.big-container .medium-container {
+.community .medium-container {
   /* position: relative; */
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
   z-index: 1;
 }
 
-.big-container .medium-container .small-container {
+.community .medium-container .small-container {
   /* position: relative; */
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid var(--colors-card-border, #e7e3eb);
@@ -24,7 +24,7 @@
   z-index: 2;
 }
 
-.big-container .medium-container .small-container 
+.community .medium-container .small-container 
 .join-and-social .join-our-community {
   display: flex;
   justify-content: center;
@@ -33,7 +33,7 @@
   margin-bottom: 12px;
 }
 
-.big-container .medium-container .small-container 
+.community .medium-container .small-container 
 .join-and-social .join-our-community .join-our {
   color: var(--primary-color-news, #280d5f);
   font-size: 32px;
@@ -41,15 +41,15 @@
   line-height: 1.1;
 }
 
-.big-container .medium-container .small-container 
-.join-and-social .join-our-community .community {
+.community .medium-container .small-container 
+.join-and-social .join-our-community .community-title {
   color: var(--secondary-color-news, #7645d9);
   font-size: 32px;
   font-weight: 600;
   line-height: 1.1;
 }
 
-.big-container .medium-container .small-container 
+.community .medium-container .small-container 
 .join-and-social .together {
   color: var(--colors-text-subtle, #7a6eaa);
   text-align: center;
@@ -59,7 +59,7 @@
   margin-bottom: 40px;
 }
 
-.big-container .medium-container .small-container 
+.community .medium-container .small-container 
 .join-and-social .numbers-posts {
   display: flex;
   justify-content: center;
@@ -67,7 +67,7 @@
   flex-flow: wrap;
 }
 
-.big-container .medium-container .small-container 
+.community .medium-container .small-container 
 .join-and-social .numbers-posts .numbers {
   display: flex;
   flex-direction: column;
@@ -79,7 +79,7 @@
   padding: 24px;
 }
 
-.big-container .medium-container .small-container 
+.community .medium-container .small-container 
 .join-and-social .numbers-posts .numbers .white {
   color: white;
   font-size: 16px;
@@ -87,7 +87,7 @@
   line-height: 1.5;
 }
 
-.big-container .medium-container .small-container 
+.community .medium-container .small-container 
 .join-and-social .numbers-posts .numbers .yellow {
   color: #ffb237;
   font-size: 40px;
@@ -96,7 +96,7 @@
   margin-bottom: 27px;
 }
 
-.big-container .medium-container .small-container 
+.community .medium-container .small-container 
 .join-and-social .numbers-posts .posts {
   display: flex;
   flex-direction: column;
@@ -109,7 +109,7 @@
   margin-top: 24px;
 }
 
-.big-container .medium-container .small-container 
+.community .medium-container .small-container 
 .social-icons {
   display: flex;
   justify-content: center;
@@ -117,13 +117,13 @@
   margin-top: 30px;
 }
 
-.big-container .medium-container .small-container 
+.community .medium-container .small-container 
 .social-icons > a {
   background-color: var(--colors-background-alt, #fff);
   border-radius: 32px;
 }
 
-.big-container .medium-container .small-container 
+.community .medium-container .small-container 
 .social-icons > a > div {
   display: flex;
   justify-content: center;
@@ -134,7 +134,7 @@
   border-radius: 32px;
 }
 
-.big-container .medium-container .small-container 
+.community .medium-container .small-container 
 .social-icons .social-img {
   width: 18px;
   height: 15px;
