@@ -323,3 +323,29 @@
     height: 48px;
   }
 }
+
+/* DESKTOP */
+
+@media screen and (min-width: 968px) {
+  .community .medium-container .img-1 {
+    transform: scale(1);
+    left: calc(50% + 94px);
+    top: -140px;
+  }
+
+  .community .medium-container .img-2 .img-2-1 {
+    left: calc(50% - 426px);
+  }
+
+  .community .medium-container .img-2 .img-2-1 .message {
+    width: 150px;
+    top: 250px;
+    left: 100px;
+  }
+
+  .community .medium-container .img-2 .img-2-1 .bell {
+    width: 250px;
+    top: 200px;
+    left: -50px;
+  }
+}
