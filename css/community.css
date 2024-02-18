@@ -204,7 +204,7 @@
   width: 391px;
   height: 620px;
   position: absolute;
-  top: 110px;
+  top: 166px;
   left: 10px;
 }
 
@@ -359,5 +359,22 @@
   .community .medium-container .small-container 
   .join-and-social .join-our-community .community-title {
     font-size: 40px;
+  }
+}
+
+/* LARGE DESKTOP */
+
+@media screen and (min-width: 1200px) {
+  .community .medium-container .img-1 {
+    left: calc(100% - 326px);
+    top: -124px;
+  }
+
+  .community .medium-container .img-2 .img-2-1 {
+    display: none;
+  }
+
+  .community .medium-container .img-2 .img-2-2 {
+    display: block;
   }
 }
