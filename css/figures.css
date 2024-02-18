@@ -15,6 +15,7 @@
   padding: 48px 16px;
   margin: 0 auto;
   box-sizing: border-box;
+  position: relative;
 }
 
 .figures-container .figures-cake {
@@ -75,6 +76,29 @@
   border-bottom: 1px solid var(--colors-card-border, #e7e3eb);
   padding: 12px 16px;
   flex-grow: 1;
+}
+
+.figures-container .bottom {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0px;
+  top: 0px;
+}
+
+.figures-container .bottom .bottom-background {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  bottom: 0px;
+}
+
+.figures-container .bottom .bottom-background svg {
+  width: 100%;
+  height: 100%;
+  max-height: 48px;
 }
 
 /* TABLET */
