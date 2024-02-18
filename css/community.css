@@ -7,14 +7,20 @@
   background: linear-gradient(180deg,#6fb6f1 0%,#eaf2f6 100%);
   box-sizing: border-box;
   padding: 48px 0;
+  position: relative;
+  z-index: 1;
 }
 
 .community .medium-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* 
+  width: 100%; 
+  box-sizing: border-box;
+  */
+  max-width: 968px;
   padding: 0 16px;
-  z-index: 1;
 }
 
 .community .medium-container .small-container {
@@ -113,12 +119,12 @@
   display: flex;
   flex-direction: column;
   width: 340px;
+  /* TO DO: rimuovere quando twitter posts sono finiti */
   height: 345px;
   background: var(--colors-background-alt, #fff);
   border: 1px solid var(--colors-card-border, #e7e3eb);
   border-radius: 32px;
   box-shadow: 0px 2px 0px 0px var(--colors-card-border, #e7e3eb);
-  margin-top: 24px;
 }
 
 .community .medium-container .small-container 
@@ -150,4 +156,126 @@
 .social-icons .social-img {
   width: 18px;
   height: 15px;
+}
+
+/* background images */
+
+.community .medium-container .img-1 {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  left: calc(50% - 166px);
+  top: -206px;
+  z-index: 1;
+  transform: scale(0.8);
+  transform-origin: center center;
+}
+
+.community .medium-container .img-2 {
+  z-index: -1;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.community .medium-container .img-2 .img-2-1 {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  bottom: -110px;
+  left: calc(50% - 106px);
+  display: block;
+}
+
+.community .medium-container .img-2 .img-2-2 {
+  display: none;
+  width: 391px;
+  height: 620px;
+  position: absolute;
+  top: 110px;
+  left: 10px;
+}
+
+.community .medium-container .img-1 img,
+.community .medium-container .img-2 img {
+  position: absolute;
+}
+
+.community .medium-container .img-1 .message {
+  width: 150px;
+  top: 300px;
+  left: 100px;
+  z-index: 3;
+}
+
+.community .medium-container .img-1 .bell {
+  width: 250px;
+  top: 200px;
+  left: -50px;
+  z-index: 1;
+}
+
+.community .medium-container .img-1 .heart {
+  width: 80px;
+  top: 120px;
+  z-index: 3;
+}
+
+.community .medium-container .img-1 .megaphone {
+  width: 250px;
+  top: 100px;
+  left: 50px;
+  z-index: 3;
+}
+
+.community .medium-container .img-1 .text {
+  width: 120px;
+  top: 120px;
+  z-index: 2;
+  left: 200px;
+}
+
+.community .medium-container .img-2 .message {
+  width: 100px;
+  top: 330px;
+  left: 100px;
+  z-index: 3;
+}
+
+.community .medium-container .img-2 .bell {
+  width: 180px;
+  top: 250px;
+  left: -15px;
+  z-index: 1;
+}
+
+.community .medium-container .img-2 .discord {
+  width: 180px;
+  top: 357px;
+  left: 29px;
+  z-index: 2;
+}
+
+.community .medium-container .img-2 .twitter {
+  width: 230px;
+  z-index: 3;
+  top: 0px;
+  left: 30px;
+}
+
+.community .medium-container .img-2 .telegram {
+  width: 220px;
+  top: 94px;
+  left: 120px;
+  z-index: 2;
+}
+
+.community .medium-container .img-2 .instagram {
+  width: 240px;
+  left: 78px;
+  top: 244px;
+  z-index: 1;
 }
