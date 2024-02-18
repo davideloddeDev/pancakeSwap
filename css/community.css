@@ -279,3 +279,29 @@
   top: 244px;
   z-index: 1;
 }
+
+/* TABLET */
+
+@media screen and (min-width: 576px) and (max-width: 967px) {
+  .community .medium-container .img-1 {
+    transform: scale(1);
+    left: calc(50% - 136px);
+    top: -186px;
+  }
+
+  .community .medium-container .img-2 .img-2-1 {
+    left: 50px;
+  }
+
+  .community .medium-container .img-2 .img-2-1 .message {
+    width: 150px;
+    top: 250px;
+    left: 100px;
+  }
+
+  .community .medium-container .img-2 .img-2-1 .bell {
+    width: 250px;
+    top: 200px;
+    left: -50px;
+  }
+}
