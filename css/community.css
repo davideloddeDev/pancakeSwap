@@ -359,6 +359,7 @@
 
   .community .medium-container .small-container {
     padding: 40px;
+    z-index: 4;
   }
 
   .community .medium-container .small-container 
