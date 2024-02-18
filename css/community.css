@@ -304,4 +304,22 @@
     top: 200px;
     left: -50px;
   }
+
+  .community .medium-container .small-container 
+  .join-and-social .join-our-community {
+    flex-direction: row;
+    gap: 8px;
+  }
+  
+  .community .medium-container .small-container 
+  .join-and-social .numbers-posts .numbers {
+    padding: 24px 0px 24px 60px;
+    height: 340px;
+  }
+
+  .community .medium-container .small-container 
+  .social-icons > a > div {
+    width: 48px;
+    height: 48px;
+  }
 }
