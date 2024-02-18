@@ -6,9 +6,6 @@
 .community {
   box-sizing: border-box;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   overflow: hidden;
   padding-top: 48px;
 }
@@ -17,6 +14,10 @@
   background: linear-gradient(180deg,#6fb6f1 0%,#eaf2f6 100%);
   padding: 48px 0;
   z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .community .medium-container {
@@ -180,7 +181,7 @@
 }
 
 .community .medium-container .img-2 {
-  z-index: -1;
+  /* z-index: -1; */
   overflow: hidden;
   position: absolute;
   width: 100%;
@@ -250,7 +251,8 @@
   width: 100px;
   top: 330px;
   left: 100px;
-  z-index: 3;
+  /* z-index: 3; */
+  z-index: 2;
 }
 
 .community .medium-container .img-2 .bell {
