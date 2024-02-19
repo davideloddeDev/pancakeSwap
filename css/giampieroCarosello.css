@@ -180,7 +180,7 @@
 
 @media screen and (max-width:768px) {
     .carosello-container{
-        max-width: 768px;
+        max-width: 100%;
     }
 
     .carosello-heder>h2{        
@@ -206,7 +206,7 @@
 
 @media screen and (max-width:430px) {
     .carosello-container{
-        max-width: 430px;
+        max-width: 100%;
     }
 
     .carosello-heder>h2{        
