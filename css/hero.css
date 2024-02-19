@@ -162,7 +162,6 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 5px;
     z-index: 3000;
 
 }
