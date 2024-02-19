@@ -12,6 +12,9 @@
   --news-card-border:#e7e3eb;
   --background-news: #ffffff;
   /*Colors section news*/
+  /*Colors section carosello*/
+  --carosello-background: #d7caec;
+  /*Colors section carosello*/
   /* aggiunto da Martina */
   --tertiary-color: #eff4f5;
   --colors-background-alt: #fff;
@@ -46,6 +49,9 @@
   --news-card-border:#383241;
   --background-news: #000000;
   /*Colors section news*/
+  /*Colors section carosello*/
+  --carosello-background: #1f1233;
+  /*Colors section carosello*/
   /*Colors Favorite Dex*/
   --colors-background: linear-gradient(139.73deg, #08060b 0%, #1b142b 100%);
   --colors-favorite-dex-title: #f4eeff;
