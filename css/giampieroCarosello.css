@@ -13,7 +13,7 @@
 
     padding: 32px;
 
-    background-image: linear-gradient(to bottom ,var(--background-principal) 22%,var(--carosello-background) 100%);    
+    background-image: linear-gradient(to bottom ,var(--background-principal) 10%,var(--carosello-background) 100%);    
 }
 .carosello-heder{
     text-align: center;
@@ -70,11 +70,13 @@
 .border-sinistro{
     width: 100px;
     height: 46px;
-   /* border: 1px solid black;*/
+   /*border: 1px solid black;*/
     position: relative;
-    left: 5%;
+    left: 4%;
     z-index: 1;
-    background-image: linear-gradient(to right, rgb(255, 255, 255) 50% , transparent);
+    background-image: linear-gradient(to right, #dfd4f0 50% , transparent);
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
     
     
 }
@@ -83,10 +85,14 @@
     height: 46px;
     /*border: 1px solid black;*/
     position: relative;
-    right: 5%;
+    right: 4%;
     
     z-index: 1;
-    background-image: linear-gradient(to right, transparent  , white 50%);
+    background-image: linear-gradient(to right, transparent  , #dfd4f0 50%);
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 40%;
+    
+
 }
 
 .carosello-footer{
@@ -97,6 +103,9 @@
     display: flex;
     flex-direction: row;
     gap: 32px;
+
+    border-left: 5px transparent white;
+    border-right: 5px transparent white;
 }
 
 .carosello-footer>a{
@@ -165,4 +174,76 @@
 .footer-background>img{
     height: 32px;
     width: 100%;
+}
+
+/*Media queries*/
+
+@media screen and (max-width:768px) {
+    .carosello-container{
+        max-width: 768px;
+    }
+
+    .carosello-heder>h2{        
+        font-size: 32px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .carosello-main{
+        max-width: 430px;
+        gap: 32px;
+    }
+    .carosello-main>div>h5{     
+        font-size: 20px;
+    }
+    .carosello-main>div>h3{
+        font-size: 40px;
+    }
+    .carosello-main>div>p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .carosello-container{
+        max-width: 430px;
+    }
+
+    .carosello-heder>h2{        
+        font-size: 20px;
+        text-align: center;
+        overflow-wrap: break-word;
+    }
+
+    .carosello-main{
+        max-width: 430px;
+        flex-direction: column;
+        gap: 0px;
+    }
+    .carosello-main>div>h5{     
+        font-size: 16px;
+    }
+    .carosello-main>div>h3{
+        font-size: 32px;
+    }
+    .carosello-main>div>p{
+        font-size: 14px;
+    }
+
+    
+    .carosello-footer{
+        height: 38px;
+        max-width: 430px;
+        
+    }
+    .container-footer{
+        height: 38px;
+        margin: 8px;
+    }
+    .carosello-footer>a{
+        font-size: 16px;
+    }
+    .carosello-footer>a>img{
+        width: 20px;
+    }
 }
