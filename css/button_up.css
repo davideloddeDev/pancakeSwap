@@ -13,11 +13,13 @@
     justify-content: center;
     transition: background-color 0.3s ease;
     outline: none;
+    z-index: 1000;
 
 }
 
 .button-up-arrow{
     fill: var(--button-up-fill);
+   
 }
 
 .button-up:hover {

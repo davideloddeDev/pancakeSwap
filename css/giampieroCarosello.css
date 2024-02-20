@@ -5,14 +5,13 @@
 }
 
 .carosello-container{
+    width: 100%;
     font-family: Kanit,sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
     padding: 32px;
-
     background-image: linear-gradient(to bottom ,var(--background-principal) 10%,var(--carosello-background) 100%);    
 }
 .carosello-heder{
@@ -169,6 +168,10 @@
 #base{
     color: var(--background-principal);
     background-color: #6991e5;
+}
+
+.footer-background {
+    width: 100%;
 }
 
 .footer-background>img{

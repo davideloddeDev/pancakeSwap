@@ -29,6 +29,9 @@
   --colors-favorite-dex-p: #7a6eaa;
   --ecosystem-card-bg-color: #ffffff;
   --ecosystem-background: #faf9fa;
+  --button-up-fill: #191e31;
+  --button-up-background: #1fc7d4;
+  --button-up-background-hover: #1fc7d499;
 }
 
 /* aggiunto da Martina */
@@ -61,6 +64,9 @@
   --colors-favorite-dex-p: #fff;
   --ecosystem-card-bg-color: linear-gradient(139.73deg, #313d5c 0%,#3d2a54 100%);
   --ecosystem-background: #08060b;
+  --button-up-fill: #f4eeff;
+  --button-up-background: #1fc7d4;
+  --button-up-background-hover: #1fc7d499;
 }
 
 @font-face {
