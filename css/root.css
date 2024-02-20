@@ -12,6 +12,10 @@
   --news-card-border:#e7e3eb;
   --background-news: #ffffff;
   /*Colors section news*/
+  /*Colors section carosello*/
+  --carosello-background: #d7caec;
+  --carosello-gradient: #dfd4f0;
+  /*Colors section carosello*/
   /* aggiunto da Martina */
   --tertiary-color: #eff4f5;
   --colors-background-alt: #fff;
@@ -25,10 +29,6 @@
   --colors-favorite-dex-p: #7a6eaa;
   --ecosystem-card-bg-color: #ffffff;
   --ecosystem-background: #faf9fa;
-  /* button up */
-  --button-up-background: #1FC7D4;
-  --button-up-background-hover: rgba(31, 199, 212, 0.6);
-  --button-up-fill: #f4eeff;
 }
 
 /* aggiunto da Martina */
@@ -50,6 +50,10 @@
   --news-card-border:#383241;
   --background-news: #000000;
   /*Colors section news*/
+  /*Colors section carosello*/
+  --carosello-background: #1f1233;
+  --carosello-gradient: #1b102d;
+  /*Colors section carosello*/
   /*Colors Favorite Dex*/
   --colors-background: linear-gradient(139.73deg, #08060b 0%, #1b142b 100%);
   --colors-favorite-dex-title: #f4eeff;
@@ -57,10 +61,6 @@
   --colors-favorite-dex-p: #fff;
   --ecosystem-card-bg-color: linear-gradient(139.73deg, #313d5c 0%,#3d2a54 100%);
   --ecosystem-background: #08060b;
-  /* button up */
-  --button-up-background: #1FC7D4;
-  --button-up-background-hover: rgba(31, 199, 212, 0.6);
-  --button-up-fill: #191e31;
 }
 
 @font-face {
@@ -94,9 +94,7 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
