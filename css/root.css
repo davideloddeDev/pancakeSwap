@@ -14,6 +14,7 @@
   /*Colors section news*/
   /*Colors section carosello*/
   --carosello-background: #d7caec;
+  --carosello-gradient: #dfd4f0;
   /*Colors section carosello*/
   /* aggiunto da Martina */
   --tertiary-color: #eff4f5;
@@ -51,6 +52,7 @@
   /*Colors section news*/
   /*Colors section carosello*/
   --carosello-background: #1f1233;
+  --carosello-gradient: #1b102d;
   /*Colors section carosello*/
   /*Colors Favorite Dex*/
   --colors-background: linear-gradient(139.73deg, #08060b 0%, #1b142b 100%);

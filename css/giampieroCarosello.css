@@ -74,7 +74,7 @@
     position: relative;
     left: 4%;
     z-index: 1;
-    background-image: linear-gradient(to right, #dfd4f0 50% , transparent);
+    background-image: linear-gradient(to right, var(--carosello-gradient) 50% , transparent);
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
     
@@ -88,7 +88,7 @@
     right: 4%;
     
     z-index: 1;
-    background-image: linear-gradient(to right, transparent  , #dfd4f0 50%);
+    background-image: linear-gradient(to right, transparent  , var(--carosello-gradient) 50%);
     border-top-right-radius: 40%;
     border-bottom-right-radius: 40%;
     
