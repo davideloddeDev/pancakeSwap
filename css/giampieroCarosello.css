@@ -64,6 +64,8 @@
 
 .container-footer{
     display: flex;
+    width: 100%;
+    max-width: 1168px;
 }
 
 .border-sinistro{
@@ -71,7 +73,7 @@
     height: 46px;
    /*border: 1px solid black;*/
     position: relative;
-    left: 4%;
+    left: 3%;
     z-index: 1;
     background-image: linear-gradient(to right, var(--carosello-gradient) 50% , transparent);
     border-top-left-radius: 50%;
@@ -84,7 +86,7 @@
     height: 46px;
     /*border: 1px solid black;*/
     position: relative;
-    right: 4%;
+    right: 3%;
     
     z-index: 1;
     background-image: linear-gradient(to right, transparent  , var(--carosello-gradient) 50%);
