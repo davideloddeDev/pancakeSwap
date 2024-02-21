@@ -144,6 +144,17 @@
 }
 
 .community .medium-container .small-container 
+.join-and-social .posts .tweet,
+.community .medium-container .small-container 
+.join-and-social .posts .blog {
+  color: var(--colors-text, #280d5f);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.community .medium-container .small-container 
 .social-icons {
   display: flex;
   justify-content: center;
