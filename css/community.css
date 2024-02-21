@@ -190,12 +190,33 @@ html[data-theme="dark"] .community .medium-container .small-container {
   height: 32px;
   background-color: var(--colors-background-alt, #fff);
   border-radius: 32px;
+  transition: background-color 0.25s ease-in-out 0s;
 }
 
 .community .medium-container .small-container 
-.social-icons .social-img {
+.social-icons > a > div:hover {
+  background-color: var(--secondary-color, #1fc7d4);
+}
+
+.community .medium-container .small-container 
+.social-icons svg {
   width: 18px;
-  height: 15px;
+}
+
+.community .medium-container .small-container 
+.social-icons svg path {
+  fill: var(--secondary-color, #1fc7d4);
+  transition: fill 0.25s ease-in-out 0s;
+}
+
+.community .medium-container .small-container 
+.social-icons > a > div:hover svg path {
+  fill: #ffffff;
+}
+
+html[data-theme="dark"] .community .medium-container .small-container 
+.social-icons > a > div:hover svg path {
+  fill: #000000;
 }
 
 /* background images */
