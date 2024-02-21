@@ -127,3 +127,38 @@ body {
         transform: translate(0, 0);
     }
 }
+
+/* smartphone */
+
+@media screen and (max-width: 375px) {
+    .favorite-container {
+        width: 72%;
+    }
+    .favorite-center {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+/* tablet */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+    .favorite-container {
+        width: 72%;
+    }
+    .favorite-center {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    
+}
+
+/* desktop */
+@media screen and (min-width: 769px) {
+    .favorite-container {
+        width: 640px;
+    }
+    
+    
+    
+}
