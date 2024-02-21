@@ -58,6 +58,10 @@ html[data-theme="dark"] .community .community-background {
   width: 100%;
 }
 
+html[data-theme="dark"] .community .medium-container .small-container {
+  background: rgba(0, 0, 0, 0.8);
+}
+
 .community .medium-container .small-container .join-and-social {
   display: flex;
   flex-direction: column;
