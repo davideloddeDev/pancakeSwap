@@ -154,7 +154,6 @@ html[data-theme="dark"] .community .medium-container .small-container {
   border: 1px solid var(--colors-card-border, #e7e3eb);
   border-radius: 32px;
   box-shadow: 0px 2px 0px 0px var(--colors-card-border, #e7e3eb);
-  /* TO DO: rimuovere quando twitter posts sono finiti */
   height: 345px;
   position: relative;
 }
@@ -169,6 +168,10 @@ html[data-theme="dark"] .community .medium-container .small-container {
   line-height: 1.5;
   position: absolute;
   width: 290px;
+  transition-property: opacity;
+  transition-delay: 0;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
 }
 
 .community .medium-container .small-container 
