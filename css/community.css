@@ -156,6 +156,7 @@ html[data-theme="dark"] .community .medium-container .small-container {
   box-shadow: 0px 2px 0px 0px var(--colors-card-border, #e7e3eb);
   /* TO DO: rimuovere quando twitter posts sono finiti */
   height: 345px;
+  position: relative;
 }
 
 .community .medium-container .small-container 
@@ -166,6 +167,8 @@ html[data-theme="dark"] .community .medium-container .small-container {
   font-size: 14px;
   font-weight: 600;
   line-height: 1.5;
+  position: absolute;
+  width: 290px;
 }
 
 .community .medium-container .small-container 
