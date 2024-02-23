@@ -351,6 +351,11 @@ html[data-theme="dark"] .community .medium-container .small-container {
 }
 
 .community .medium-container .small-container 
+.join-and-social .numbers-posts .posts .bar span:hover {
+  cursor: pointer;
+}
+
+.community .medium-container .small-container 
 .join-and-social .numbers-posts .posts .bar span.active {
   background-color: rgb(118, 69, 217);
 }
