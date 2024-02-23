@@ -175,6 +175,11 @@ html[data-theme="dark"] .community .medium-container .small-container {
 }
 
 .community .medium-container .small-container 
+.join-and-social .posts .blog {
+  cursor: pointer;
+}
+
+.community .medium-container .small-container 
 .join-and-social .numbers-posts .posts .tweet-title,
 .community .medium-container .small-container 
 .join-and-social .numbers-posts .posts .blog-title {
@@ -286,6 +291,11 @@ html[data-theme="dark"] .community .medium-container .small-container {
   font-size: 16px;
   text-decoration: none;
   color: var(--secondary-color, #1fc7d4);
+}
+
+.community .medium-container .small-container 
+.join-and-social .numbers-posts .posts .tweet-link:hover {
+  text-decoration: underline;
 }
 
 .community .medium-container .small-container 
