@@ -1,5 +1,6 @@
 document.getElementById("community-tweet").style.opacity = 1;
 document.getElementById("community-blog").style.opacity = 0;
+document.getElementById("community-tweet-bar").classList.add("active");
 
 let tweetVisible = true;
 
@@ -13,4 +14,6 @@ setInterval(() => {
     document.getElementById("community-blog").style.opacity = 0;
     tweetVisible = true;
   }
-}, 2000)
+  document.getElementById("community-tweet-bar").classList.toggle("active");
+  document.getElementById("community-blog-bar").classList.toggle("active");
+}, 5000)

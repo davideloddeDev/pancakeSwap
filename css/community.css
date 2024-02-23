@@ -323,6 +323,39 @@ html[data-theme="dark"] .community .medium-container .small-container {
 }
 
 .community .medium-container .small-container 
+.join-and-social .numbers-posts .posts .bar {
+  display: flex;
+  border-radius: 24px;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  width: 72px;
+  height: 8px;
+}
+
+.community .medium-container .small-container 
+.join-and-social .numbers-posts .posts .bar span {
+  width: 50%;
+  border-radius: 24px;
+  background-color: rgba(236, 234, 243);
+}
+
+.community .medium-container .small-container 
+.join-and-social .numbers-posts .posts .bar span.active {
+  background-color: rgb(118, 69, 217);
+}
+
+.community .medium-container .small-container 
+.join-and-social .numbers-posts .posts .bar .left-bar {
+  border-radius: 4px 0 0 4px;
+}
+
+.community .medium-container .small-container 
+.join-and-social .numbers-posts .posts .bar .right-bar {
+  border-radius: 0 4px 4px 0;
+}
+
+.community .medium-container .small-container 
 .social-icons {
   display: flex;
   justify-content: center;
