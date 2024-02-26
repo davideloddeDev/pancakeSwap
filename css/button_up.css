@@ -1,6 +1,7 @@
 
 
 .button-up{
+    display: none;
     position: fixed;
     right: 18px;
     bottom: 110px;
@@ -21,7 +22,6 @@
 
 .button-up-arrow{
     fill: var(--button-up-fill);
-   
 }
 
 .button-up:hover {
@@ -32,4 +32,3 @@
     border: none;
     outline: none;
   }
-
