@@ -29,6 +29,8 @@
   --button-up-background: #1FC7D4;
   --button-up-background-hover: rgba(31, 199, 212, 0.6);
   --button-up-fill: #f4eeff;
+  /* Full potential colors */
+  --fp-background: #fafafaff;
 }
 
 /* aggiunto da Martina */
@@ -55,12 +57,15 @@
   --colors-favorite-dex-title: #f4eeff;
   --colors-favorite-dex-span: #a881fd;
   --colors-favorite-dex-p: #fff;
+  /* Ecosystem colors */
   --ecosystem-card-bg-color: linear-gradient(139.73deg, #313d5c 0%,#3d2a54 100%);
   --ecosystem-background: #08060b;
   /* button up */
   --button-up-background: #1FC7D4;
   --button-up-background-hover: rgba(31, 199, 212, 0.6);
   --button-up-fill: #191e31;
+  /* Full potential colors */
+  --fp-background: rgb(8, 4, 10);
 }
 
 @font-face {
@@ -89,14 +94,11 @@
 body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   font-family: 'Kanit', sans-serif;
-  background: var(--background-principal);
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-
 }
