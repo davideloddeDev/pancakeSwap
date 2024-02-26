@@ -92,6 +92,7 @@
     url('../fonts/Kanit/Kanit-Thin.ttf') format('ttf'),
     url('../fonts/Kanit/Kanit-ThinItalic.ttf') format('ttf');
   /* Aggiungi altre font-face regole se il font è disponibile in diversi formati */
+  
 }
 
 body {
