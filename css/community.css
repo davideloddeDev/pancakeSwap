@@ -3,6 +3,7 @@
   position: relative;
   overflow: hidden;
   padding-top: 48px;
+  width: 100%;
 }
 
 .community .bottom-background svg {
