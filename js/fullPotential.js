@@ -8,11 +8,9 @@ function changeVideo() {
     let coinDark = document.querySelector(".coin-dark");
     
     if (!lightMode) {
-      console.log('Showing dark mode videos');
       coinDark.style.display = 'block';
       coinLight.style.display = 'none';
     } else {
-      console.log('Showing light mode videos');
       coinDark.style.display = 'none';
       coinLight.style.display = 'block';
     }
