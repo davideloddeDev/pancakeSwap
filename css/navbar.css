@@ -155,7 +155,7 @@ nav .right .button-wallet p {
   top: 55px;
   left: 0;
   display: none;
-  z-index: 1001;
+  z-index: 3001;
 }
 
 .sub-menu-centered {
