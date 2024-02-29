@@ -200,6 +200,7 @@ article img {
   display: flex;
   flex-wrap: wrap;
   font-size: 14px;
+  padding-right: 10px;
   color: var(--primary-color-news);
   font-weight: 400;
   line-height: 120%;
@@ -218,6 +219,7 @@ h4 {
   color: var(--primary-color-news);
   font-size: 20px;
   line-height: 110%;
+  padding-right: 10px;
   font-weight: 600;
   margin-bottom: 8px;
 }
